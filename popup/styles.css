@@ -177,7 +177,7 @@
     transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
-.emoji-image, .emoji-image-anim {
+.emoji-image {
     position: absolute;
     vertical-align: middle;
     object-fit: cover;
@@ -186,9 +186,6 @@
 }
 .emoji-appear {
     animation: emojiFadeIn 0.3s ease-out forwards;
-}
-.emoji-appear .emoji-image-anim {
-    opacity: 0;
 }
 
 @keyframes emojiFadeIn {
@@ -207,20 +204,6 @@
     height: 34.8px;
     opacity: 1;
 }
-.emoji-image-anim {
-    height: 34px;
-    width: 34px;
-    transform: translateY(2px);
-    opacity: 0;
-}
-.emoji:hover .emoji-image {
-    opacity: 0; /* Ẩn nội dung khi hover */
-}
-
-.emoji:hover .emoji-image-anim {
-    opacity: 1; /* Hiển thị ảnh khi hover */
-}
-
 .emoji:hover {
     background-color: rgba(165, 165, 165, 0.5);
 }

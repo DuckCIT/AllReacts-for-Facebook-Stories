@@ -2,9 +2,9 @@
 <p align="center">AllReacts for Facebook Stories <strong>enhances</strong> your Facebook experience by letting you <strong>react with any emoji</strong> and <strong>view Stories unseen</strong>.</p>
 <br/>
 <p align="center">
-  <a rel="noreferrer noopener" href="https://chromewebstore.google.com/detail/allreacts-for-facebook-stories"><img alt="Chrome Web Store" src="https://img.shields.io/badge/Chrome-141e24.svg?&style=for-the-badge&logo=google-chrome&logoColor=white"></a>
+  <a rel="noreferrer noopener"><img alt="Chrome Web Store" src="https://img.shields.io/badge/Chrome-141e24.svg?&style=for-the-badge&logo=google-chrome&logoColor=white"></a>
   <a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/allreacts-for-facebook-stories/"><img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a>
-  <a rel="noreferrer noopener" href="https://microsoftedge.microsoft.com/addons/detail/allreacts-for-facebook-stories"><img alt="Edge Addons" src="https://img.shields.io/badge/Edge-141e24.svg?&style=for-the-badge&logo=microsoft-edge&logoColor=white"></a>
+  <a rel="noreferrer noopener"><img alt="Edge Addons" src="https://img.shields.io/badge/Edge-141e24.svg?&style=for-the-badge&logo=microsoft-edge&logoColor=white"></a>
 </p>
 
 <h2 align="center">AllReacts for Facebook Stories</h2>
@@ -26,7 +26,7 @@ For the latest features and improvements, check out the [CHANGELOG](CHANGELOG.md
 - Once installed, the AllReacts icon will appear in your browser toolbar.
 
 ### Option 2: Manual Installation (For Developers)
-1. **Clone the Repository** (or Download ZIP):
+1. **Clone the Repository** (or **`Download ZIP`**):
     ```bash
     git clone https://github.com/DuckCIT/AllReacts-for-Facebook-Stories.git
 2. **Load the Extension:**
@@ -50,7 +50,7 @@ For the latest features and improvements, check out the [CHANGELOG](CHANGELOG.md
 © 2024 by Nguyen Trong Duc (DuckCIT). All rights reserved. Feel free to build upon this project, but please credit the original author.
 
 ## Contact
-Questions or feedback? Reach out via the [Contact Page](https://duckcit.me) or leave a comment on [GitHub](https://github.com/DuckCIT/AllReacts-for-Facebook-Stories).
+Questions or feedback? Reach out via the <a href="https://duckcit.me" target="_blank">Contact Page</a> or leave a comment on [GitHub](https://github.com/DuckCIT/AllReacts-for-Facebook-Stories).
 
 ## License
 This project is licensed under the MIT License. See the  file for details.

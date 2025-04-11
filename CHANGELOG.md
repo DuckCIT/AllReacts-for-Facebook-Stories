@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.7
+- Optimized performance by removing hover-to-animate effect on emojis.
+- Emojis are now static images consistent with Facebook's style.
+- Faster UI loading.
+
+
 ## v1.0.6
 - Support for Firefox.
 - Improved method for adding button more accurately.

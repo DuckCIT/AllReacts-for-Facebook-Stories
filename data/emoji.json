@@ -1,1155 +1,770 @@
 [
     {
-        "url": "https://emojipedia.org/grinning-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/grinning-face_1f600.png",
-        "value": "😀",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/grinning-face_1f600.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/grinning-face_1f600.png",
+        "value": "😀"
     },
     {
-        "url": "https://emojipedia.org/grinning-face-with-big-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/grinning-face-with-big-eyes_1f603.png",
-        "value": "😃",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/grinning-face-with-big-eyes_1f603.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/grinning-face-with-big-eyes_1f603.png",
+        "value": "😃"
     },
     {
-        "url": "https://emojipedia.org/grinning-face-with-smiling-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/grinning-face-with-smiling-eyes_1f604.png",
-        "value": "😄",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/grinning-face-with-smiling-eyes_1f604.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/grinning-face-with-smiling-eyes_1f604.png",
+        "value": "😄"
     },
     {
-        "url": "https://emojipedia.org/beaming-face-with-smiling-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/beaming-face-with-smiling-eyes_1f601.png",
-        "value": "😁",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/beaming-face-with-smiling-eyes_1f601.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/beaming-face-with-smiling-eyes_1f601.png",
+        "value": "😁"
     },
     {
-        "url": "https://emojipedia.org/grinning-squinting-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/grinning-squinting-face_1f606.png",
-        "value": "😆",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/grinning-squinting-face_1f606.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/grinning-squinting-face_1f606.png",
+        "value": "😆"
     },
     {
-        "url": "https://emojipedia.org/grinning-face-with-sweat/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/grinning-face-with-sweat_1f605.png",
-        "value": "😅",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/grinning-face-with-sweat_1f605.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/grinning-face-with-sweat_1f605.png",
+        "value": "😅"
     },
     {
-        "url": "https://emojipedia.org/rolling-on-the-floor-laughing/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/rolling-on-the-floor-laughing_1f923.png",
-        "value": "🤣",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/rolling-on-the-floor-laughing_1f923.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/rolling-on-the-floor-laughing_1f923.png",
+        "value": "🤣"
     },
     {
-        "url": "https://emojipedia.org/face-with-tears-of-joy/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-tears-of-joy_1f602.png",
-        "value": "😂",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-tears-of-joy_1f602.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-tears-of-joy_1f602.png",
+        "value": "😂"
     },
     {
-        "url": "https://emojipedia.org/slightly-smiling-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/slightly-smiling-face_1f642.png",
-        "value": "🙂",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/slightly-smiling-face_1f642.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/slightly-smiling-face_1f642.png",
+        "value": "🙂"
     },
     {
-        "url": "https://emojipedia.org/upside-down-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/upside-down-face_1f643.png",
-        "value": "🙃",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/upside-down-face_1f643.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/upside-down-face_1f643.png",
+        "value": "🙃"
     },
     {
-        "url": "https://emojipedia.org/winking-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/winking-face_1f609.png",
-        "value": "😉",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/winking-face_1f609.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/winking-face_1f609.png",
+        "value": "😉"
     },
     {
-        "url": "https://emojipedia.org/smiling-face-with-smiling-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smiling-face-with-smiling-eyes_1f60a.png",
-        "value": "😊",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smiling-face-with-smiling-eyes_1f60a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smiling-face-with-smiling-eyes_1f60a.png",
+        "value": "😊"
     },
     {
-        "url": "https://emojipedia.org/smiling-face-with-halo/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smiling-face-with-halo_1f607.png",
-        "value": "😇",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smiling-face-with-halo_1f607.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smiling-face-with-halo_1f607.png",
+        "value": "😇"
     },
     {
-        "url": "https://emojipedia.org/smiling-face-with-hearts/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smiling-face-with-hearts_1f970.png",
-        "value": "🥰",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smiling-face-with-hearts_1f970.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smiling-face-with-hearts_1f970.png",
+        "value": "🥰"
     },
     {
-        "url": "https://emojipedia.org/smiling-face-with-heart-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smiling-face-with-heart-eyes_1f60d.png",
-        "value": "😍",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smiling-face-with-heart-eyes_1f60d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smiling-face-with-heart-eyes_1f60d.png",
+        "value": "😍"
     },
     {
-        "url": "https://emojipedia.org/star-struck/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/star-struck_1f929.png",
-        "value": "🤩",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/star-struck_1f929.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/star-struck_1f929.png",
+        "value": "🤩"
     },
     {
-        "url": "https://emojipedia.org/face-blowing-a-kiss/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-blowing-a-kiss_1f618.png",
-        "value": "😘",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-blowing-a-kiss_1f618.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-blowing-a-kiss_1f618.png",
+        "value": "😘"
     },
     {
-        "url": "https://emojipedia.org/kissing-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/kissing-face_1f617.png",
-        "value": "😗",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/kissing-face_1f617.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/kissing-face_1f617.png",
+        "value": "😗"
     },
     {
-        "url": "https://emojipedia.org/kissing-face-with-closed-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/kissing-face-with-closed-eyes_1f61a.png",
-        "value": "😚",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/kissing-face-with-closed-eyes_1f61a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/kissing-face-with-closed-eyes_1f61a.png",
+        "value": "😚"
     },
     {
-        "url": "https://emojipedia.org/kissing-face-with-smiling-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/kissing-face-with-smiling-eyes_1f619.png",
-        "value": "😙",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/kissing-face-with-smiling-eyes_1f619.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/kissing-face-with-smiling-eyes_1f619.png",
+        "value": "😙"
     },
     {
-        "url": "https://emojipedia.org/smiling-face-with-tear/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smiling-face-with-tear_1f972.png",
-        "value": "🥲",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smiling-face-with-tear_1f972.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smiling-face-with-tear_1f972.png",
+        "value": "🥲"
     },
     {
-        "url": "https://emojipedia.org/face-savoring-food/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-savoring-food_1f60b.png",
-        "value": "😋",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-savoring-food_1f60b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-savoring-food_1f60b.png",
+        "value": "😋"
     },
     {
-        "url": "https://emojipedia.org/face-with-tongue/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-tongue_1f61b.png",
-        "value": "😛",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-tongue_1f61b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-tongue_1f61b.png",
+        "value": "😛"
     },
     {
-        "url": "https://emojipedia.org/winking-face-with-tongue/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/winking-face-with-tongue_1f61c.png",
-        "value": "😜",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/winking-face-with-tongue_1f61c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/winking-face-with-tongue_1f61c.png",
+        "value": "😜"
     },
     {
-        "url": "https://emojipedia.org/zany-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/zany-face_1f92a.png",
-        "value": "🤪",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/zany-face_1f92a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/zany-face_1f92a.png",
+        "value": "🤪"
     },
     {
-        "url": "https://emojipedia.org/squinting-face-with-tongue/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/squinting-face-with-tongue_1f61d.png",
-        "value": "😝",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/squinting-face-with-tongue_1f61d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/squinting-face-with-tongue_1f61d.png",
+        "value": "😝"
     },
     {
-        "url": "https://emojipedia.org/money-mouth-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/money-mouth-face_1f911.png",
-        "value": "🤑",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/money-mouth-face_1f911.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/money-mouth-face_1f911.png",
+        "value": "🤑"
     },
     {
-        "url": "https://emojipedia.org/hugging-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/hugging-face_1f917.png",
-        "value": "🤗",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/hugging-face_1f917.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/hugging-face_1f917.png",
+        "value": "🤗"
     },
     {
-        "url": "https://emojipedia.org/face-with-hand-over-mouth/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-hand-over-mouth_1f92d.png",
-        "value": "🤭",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-hand-over-mouth_1f92d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-hand-over-mouth_1f92d.png",
+        "value": "🤭"
     },
     {
-        "url": "https://emojipedia.org/shushing-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/shushing-face_1f92b.png",
-        "value": "🤫",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/shushing-face_1f92b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/shushing-face_1f92b.png",
+        "value": "🤫"
     },
     {
-        "url": "https://emojipedia.org/thinking-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/thinking-face_1f914.png",
-        "value": "🤔",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/thinking-face_1f914.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/thinking-face_1f914.png",
+        "value": "🤔"
     },
     {
-        "url": "https://emojipedia.org/zipper-mouth-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/zipper-mouth-face_1f910.png",
-        "value": "🤐",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/zipper-mouth-face_1f910.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/zipper-mouth-face_1f910.png",
+        "value": "🤐"
     },
     {
-        "url": "https://emojipedia.org/face-with-raised-eyebrow/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-raised-eyebrow_1f928.png",
-        "value": "🤨",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-raised-eyebrow_1f928.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-raised-eyebrow_1f928.png",
+        "value": "🤨"
     },
     {
-        "url": "https://emojipedia.org/neutral-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/neutral-face_1f610.png",
-        "value": "😐",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/neutral-face_1f610.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/neutral-face_1f610.png",
+        "value": "😐"
     },
     {
-        "url": "https://emojipedia.org/expressionless-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/expressionless-face_1f611.png",
-        "value": "😑",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/expressionless-face_1f611.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/expressionless-face_1f611.png",
+        "value": "😑"
     },
     {
-        "url": "https://emojipedia.org/face-without-mouth/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-without-mouth_1f636.png",
-        "value": "😶",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-without-mouth_1f636.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-without-mouth_1f636.png",
+        "value": "😶"
     },
     {
-        "url": "https://emojipedia.org/smirking-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smirking-face_1f60f.png",
-        "value": "😏",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smirking-face_1f60f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smirking-face_1f60f.png",
+        "value": "😏"
     },
     {
-        "url": "https://emojipedia.org/unamused-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/unamused-face_1f612.png",
-        "value": "😒",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/unamused-face_1f612.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/unamused-face_1f612.png",
+        "value": "😒"
     },
     {
-        "url": "https://emojipedia.org/face-with-rolling-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-rolling-eyes_1f644.png",
-        "value": "🙄",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-rolling-eyes_1f644.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-rolling-eyes_1f644.png",
+        "value": "🙄"
     },
     {
-        "url": "https://emojipedia.org/grimacing-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/grimacing-face_1f62c.png",
-        "value": "😬",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/grimacing-face_1f62c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/grimacing-face_1f62c.png",
+        "value": "😬"
     },
     {
-        "url": "https://emojipedia.org/face-exhaling/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-exhaling_1f62e-200d-1f4a8.png",
-        "value": "😮‍💨",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-exhaling_1f62e-200d-1f4a8.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-exhaling_1f62e-200d-1f4a8.png",
+        "value": "😮‍💨"
     },
     {
-        "url": "https://emojipedia.org/lying-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/lying-face_1f925.png",
-        "value": "🤥",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/lying-face_1f925.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/lying-face_1f925.png",
+        "value": "🤥"
     },
     {
-        "url": "https://emojipedia.org/relieved-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/relieved-face_1f60c.png",
-        "value": "😌",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/relieved-face_1f60c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/relieved-face_1f60c.png",
+        "value": "😌"
     },
     {
-        "url": "https://emojipedia.org/pensive-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pensive-face_1f614.png",
-        "value": "😔",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pensive-face_1f614.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pensive-face_1f614.png",
+        "value": "😔"
     },
     {
-        "url": "https://emojipedia.org/sleepy-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/sleepy-face_1f62a.png",
-        "value": "😪",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/sleepy-face_1f62a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/sleepy-face_1f62a.png",
+        "value": "😪"
     },
     {
-        "url": "https://emojipedia.org/drooling-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/drooling-face_1f924.png",
-        "value": "🤤",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/drooling-face_1f924.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/drooling-face_1f924.png",
+        "value": "🤤"
     },
     {
-        "url": "https://emojipedia.org/sleeping-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/sleeping-face_1f634.png",
-        "value": "😴",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/sleeping-face_1f634.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/sleeping-face_1f634.png",
+        "value": "😴"
     },
     {
-        "url": "https://emojipedia.org/face-with-medical-mask/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-medical-mask_1f637.png",
-        "value": "😷",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-medical-mask_1f637.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-medical-mask_1f637.png",
+        "value": "😷"
     },
     {
-        "url": "https://emojipedia.org/face-with-thermometer/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-thermometer_1f912.png",
-        "value": "🤒",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-thermometer_1f912.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-thermometer_1f912.png",
+        "value": "🤒"
     },
     {
-        "url": "https://emojipedia.org/face-with-head-bandage/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-head-bandage_1f915.png",
-        "value": "🤕",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-head-bandage_1f915.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-head-bandage_1f915.png",
+        "value": "🤕"
     },
     {
-        "url": "https://emojipedia.org/nauseated-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/nauseated-face_1f922.png",
-        "value": "🤢",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/nauseated-face_1f922.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/nauseated-face_1f922.png",
+        "value": "🤢"
     },
     {
-        "url": "https://emojipedia.org/face-vomiting/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-vomiting_1f92e.png",
-        "value": "🤮",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-vomiting_1f92e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-vomiting_1f92e.png",
+        "value": "🤮"
     },
     {
-        "url": "https://emojipedia.org/sneezing-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/sneezing-face_1f927.png",
-        "value": "🤧",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/sneezing-face_1f927.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/sneezing-face_1f927.png",
+        "value": "🤧"
     },
     {
-        "url": "https://emojipedia.org/hot-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/hot-face_1f975.png",
-        "value": "🥵",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/hot-face_1f975.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/hot-face_1f975.png",
+        "value": "🥵"
     },
     {
-        "url": "https://emojipedia.org/cold-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/cold-face_1f976.png",
-        "value": "🥶",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/cold-face_1f976.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/cold-face_1f976.png",
+        "value": "🥶"
     },
     {
-        "url": "https://emojipedia.org/woozy-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/woozy-face_1f974.png",
-        "value": "🥴",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/woozy-face_1f974.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/woozy-face_1f974.png",
+        "value": "🥴"
     },
     {
-        "url": "https://emojipedia.org/dizzy-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/dizzy-face_1f635.png",
-        "value": "😵",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/dizzy-face_1f635.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/dizzy-face_1f635.png",
+        "value": "😵"
     },
     {
-        "url": "https://emojipedia.org/face-with-spiral-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-spiral-eyes_1f635-200d-1f4ab.png",
-        "value": "😵‍💫",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-spiral-eyes_1f635-200d-1f4ab.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-spiral-eyes_1f635-200d-1f4ab.png",
+        "value": "😵‍💫"
     },
     {
-        "url": "https://emojipedia.org/exploding-head/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/exploding-head_1f92f.png",
-        "value": "🤯",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/exploding-head_1f92f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/exploding-head_1f92f.png",
+        "value": "🤯"
     },
     {
-        "url": "https://emojipedia.org/cowboy-hat-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/cowboy-hat-face_1f920.png",
-        "value": "🤠",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/cowboy-hat-face_1f920.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/cowboy-hat-face_1f920.png",
+        "value": "🤠"
     },
     {
-        "url": "https://emojipedia.org/partying-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/partying-face_1f973.png",
-        "value": "🥳",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/partying-face_1f973.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/partying-face_1f973.png",
+        "value": "🥳"
     },
     {
-        "url": "https://emojipedia.org/disguised-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/disguised-face_1f978.png",
-        "value": "🥸",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/disguised-face_1f978.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/disguised-face_1f978.png",
+        "value": "🥸"
     },
     {
-        "url": "https://emojipedia.org/smiling-face-with-sunglasses/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smiling-face-with-sunglasses_1f60e.png",
-        "value": "😎",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smiling-face-with-sunglasses_1f60e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smiling-face-with-sunglasses_1f60e.png",
+        "value": "😎"
     },
     {
-        "url": "https://emojipedia.org/nerd-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/nerd-face_1f913.png",
-        "value": "🤓",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/nerd-face_1f913.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/nerd-face_1f913.png",
+        "value": "🤓"
     },
     {
-        "url": "https://emojipedia.org/face-with-monocle/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-monocle_1f9d0.png",
-        "value": "🧐",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-monocle_1f9d0.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-monocle_1f9d0.png",
+        "value": "🧐"
     },
     {
-        "url": "https://emojipedia.org/confused-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/confused-face_1f615.png",
-        "value": "😕",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/confused-face_1f615.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/confused-face_1f615.png",
+        "value": "😕"
     },
     {
-        "url": "https://emojipedia.org/worried-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/worried-face_1f61f.png",
-        "value": "😟",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/worried-face_1f61f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/worried-face_1f61f.png",
+        "value": "😟"
     },
     {
-        "url": "https://emojipedia.org/slightly-frowning-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/slightly-frowning-face_1f641.png",
-        "value": "🙁",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/slightly-frowning-face_1f641.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/slightly-frowning-face_1f641.png",
+        "value": "🙁"
     },
     {
-        "url": "https://emojipedia.org/frowning-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/frowning-face_2639-fe0f.png",
-        "value": "☹️",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/frowning-face_2639-fe0f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/frowning-face_2639-fe0f.png",
+        "value": "☹️"
     },
     {
-        "url": "https://emojipedia.org/face-with-open-mouth/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-open-mouth_1f62e.png",
-        "value": "😮",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-open-mouth_1f62e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-open-mouth_1f62e.png",
+        "value": "😮"
     },
     {
-        "url": "https://emojipedia.org/hushed-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/hushed-face_1f62f.png",
-        "value": "😯",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/hushed-face_1f62f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/hushed-face_1f62f.png",
+        "value": "😯"
     },
     {
-        "url": "https://emojipedia.org/astonished-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/astonished-face_1f632.png",
-        "value": "😲",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/astonished-face_1f632.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/astonished-face_1f632.png",
+        "value": "😲"
     },
     {
-        "url": "https://emojipedia.org/flushed-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/flushed-face_1f633.png",
-        "value": "😳",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/flushed-face_1f633.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/flushed-face_1f633.png",
+        "value": "😳"
     },
     {
-        "url": "https://emojipedia.org/pleading-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pleading-face_1f97a.png",
-        "value": "🥺",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pleading-face_1f97a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pleading-face_1f97a.png",
+        "value": "🥺"
     },
     {
-        "url": "https://emojipedia.org/frowning-face-with-open-mouth/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/frowning-face-with-open-mouth_1f626.png",
-        "value": "😦",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/frowning-face-with-open-mouth_1f626.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/frowning-face-with-open-mouth_1f626.png",
+        "value": "😦"
     },
     {
-        "url": "https://emojipedia.org/anguished-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/anguished-face_1f627.png",
-        "value": "😧",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/anguished-face_1f627.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/anguished-face_1f627.png",
+        "value": "😧"
     },
     {
-        "url": "https://emojipedia.org/fearful-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/fearful-face_1f628.png",
-        "value": "😨",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/fearful-face_1f628.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/fearful-face_1f628.png",
+        "value": "😨"
     },
     {
-        "url": "https://emojipedia.org/anxious-face-with-sweat/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/anxious-face-with-sweat_1f630.png",
-        "value": "😰",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/anxious-face-with-sweat_1f630.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/anxious-face-with-sweat_1f630.png",
+        "value": "😰"
     },
     {
-        "url": "https://emojipedia.org/sad-but-relieved-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/sad-but-relieved-face_1f625.png",
-        "value": "😥",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/sad-but-relieved-face_1f625.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/sad-but-relieved-face_1f625.png",
+        "value": "😥"
     },
     {
-        "url": "https://emojipedia.org/crying-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/crying-face_1f622.png",
-        "value": "😢",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/crying-face_1f622.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/crying-face_1f622.png",
+        "value": "😢"
     },
     {
-        "url": "https://emojipedia.org/face-holding-back-tears/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-holding-back-tears_1f979.png",
-        "value": "🥹",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-holding-back-tears_1f979.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-holding-back-tears_1f979.png",
+        "value": "🥹"
     },
     {
-        "url": "https://emojipedia.org/loudly-crying-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/loudly-crying-face_1f62d.png",
-        "value": "😭",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/loudly-crying-face_1f62d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/loudly-crying-face_1f62d.png",
+        "value": "😭"
     },
     {
-        "url": "https://emojipedia.org/face-screaming-in-fear/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-screaming-in-fear_1f631.png",
-        "value": "😱",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-screaming-in-fear_1f631.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-screaming-in-fear_1f631.png",
+        "value": "😱"
     },
     {
-        "url": "https://emojipedia.org/confounded-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/confounded-face_1f616.png",
-        "value": "😖",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/confounded-face_1f616.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/confounded-face_1f616.png",
+        "value": "😖"
     },
     {
-        "url": "https://emojipedia.org/persevering-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/persevering-face_1f623.png",
-        "value": "😣",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/persevering-face_1f623.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/persevering-face_1f623.png",
+        "value": "😣"
     },
     {
-        "url": "https://emojipedia.org/disappointed-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/disappointed-face_1f61e.png",
-        "value": "😞",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/disappointed-face_1f61e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/disappointed-face_1f61e.png",
+        "value": "😞"
     },
     {
-        "url": "https://emojipedia.org/downcast-face-with-sweat/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/downcast-face-with-sweat_1f613.png",
-        "value": "😓",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/downcast-face-with-sweat_1f613.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/downcast-face-with-sweat_1f613.png",
+        "value": "😓"
     },
     {
-        "url": "https://emojipedia.org/weary-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/weary-face_1f629.png",
-        "value": "😩",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/weary-face_1f629.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/weary-face_1f629.png",
+        "value": "😩"
     },
     {
-        "url": "https://emojipedia.org/tired-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/tired-face_1f62b.png",
-        "value": "😫",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/tired-face_1f62b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/tired-face_1f62b.png",
+        "value": "😫"
     },
     {
-        "url": "https://emojipedia.org/yawning-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/yawning-face_1f971.png",
-        "value": "🥱",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/yawning-face_1f971.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/yawning-face_1f971.png",
+        "value": "🥱"
     },
     {
-        "url": "https://emojipedia.org/face-with-steam-from-nose/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-steam-from-nose_1f624.png",
-        "value": "😤",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-steam-from-nose_1f624.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-steam-from-nose_1f624.png",
+        "value": "😤"
     },
     {
-        "url": "https://emojipedia.org/face-with-peeking-eye/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-peeking-eye_1fae3.png",
-        "value": "🫣",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-peeking-eye_1fae3.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-peeking-eye_1fae3.png",
+        "value": "🫣"
     },
     {
-        "url": "https://emojipedia.org/shaking-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/shaking-face_1fae8.png",
-        "value": "🫨",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/shaking-face_1fae8.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/shaking-face_1fae8.png",
+        "value": "🫨"
     },
     {
-        "url": "https://emojipedia.org/pouting-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pouting-face_1f621.png",
-        "value": "😡",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pouting-face_1f621.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pouting-face_1f621.png",
+        "value": "😡"
     },
     {
-        "url": "https://emojipedia.org/angry-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/angry-face_1f620.png",
-        "value": "😠",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/angry-face_1f620.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/angry-face_1f620.png",
+        "value": "😠"
     },
     {
-        "url": "https://emojipedia.org/face-with-symbols-on-mouth/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/face-with-symbols-on-mouth_1f92c.png",
-        "value": "🤬",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/face-with-symbols-on-mouth_1f92c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/face-with-symbols-on-mouth_1f92c.png",
+        "value": "🤬"
     },
     {
-        "url": "https://emojipedia.org/smiling-face-with-horns/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smiling-face-with-horns_1f608.png",
-        "value": "😈",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smiling-face-with-horns_1f608.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smiling-face-with-horns_1f608.png",
+        "value": "😈"
     },
     {
-        "url": "https://emojipedia.org/angry-face-with-horns/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/angry-face-with-horns_1f47f.png",
-        "value": "👿",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/angry-face-with-horns_1f47f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/angry-face-with-horns_1f47f.png",
+        "value": "👿"
     },
     {
-        "url": "https://emojipedia.org/skull/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/skull_1f480.png",
-        "value": "💀",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/skull_1f480.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/skull_1f480.png",
+        "value": "💀"
     },
     {
-        "url": "https://emojipedia.org/skull-and-crossbones/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/skull-and-crossbones_2620-fe0f.png",
-        "value": "☠️",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/skull-and-crossbones_2620-fe0f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/skull-and-crossbones_2620-fe0f.png",
+        "value": "☠️"
     },
     {
-        "url": "https://emojipedia.org/pile-of-poo/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pile-of-poo_1f4a9.png",
-        "value": "💩",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pile-of-poo_1f4a9.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pile-of-poo_1f4a9.png",
+        "value": "💩"
     },
     {
-        "url": "https://emojipedia.org/clown-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/clown-face_1f921.png",
-        "value": "🤡",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/clown-face_1f921.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/clown-face_1f921.png",
+        "value": "🤡"
     },
     {
-        "url": "https://emojipedia.org/baby/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/baby_1f476.png",
-        "value": "👶",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/baby_1f476.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/baby_1f476.png",
+        "value": "👶"
     },
     {
-        "url": "https://emojipedia.org/ogre/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/ogre_1f479.png",
-        "value": "👹",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/ogre_1f479.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/ogre_1f479.png",
+        "value": "👹"
     },
     {
-        "url": "https://emojipedia.org/goblin/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/goblin_1f47a.png",
-        "value": "👺",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/goblin_1f47a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/goblin_1f47a.png",
+        "value": "👺"
     },
     {
-        "url": "https://emojipedia.org/ghost/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/ghost_1f47b.png",
-        "value": "👻",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/ghost_1f47b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/ghost_1f47b.png",
+        "value": "👻"
     },
     {
-        "url": "https://emojipedia.org/alien/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/alien_1f47d.png",
-        "value": "👽",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/alien_1f47d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/alien_1f47d.png",
+        "value": "👽"
     },
     {
-        "url": "https://emojipedia.org/alien-monster/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/alien-monster_1f47e.png",
-        "value": "👾",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/alien-monster_1f47e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/alien-monster_1f47e.png",
+        "value": "👾"
     },
     {
-        "url": "https://emojipedia.org/robot/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/robot_1f916.png",
-        "value": "🤖",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/robot_1f916.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/robot_1f916.png",
+        "value": "🤖"
     },
     {
-        "url": "https://emojipedia.org/grinning-cat/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/grinning-cat_1f63a.png",
-        "value": "😺",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/grinning-cat_1f63a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/grinning-cat_1f63a.png",
+        "value": "😺"
     },
     {
-        "url": "https://emojipedia.org/grinning-cat-with-smiling-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/grinning-cat-with-smiling-eyes_1f638.png",
-        "value": "😸",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/grinning-cat-with-smiling-eyes_1f638.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/grinning-cat-with-smiling-eyes_1f638.png",
+        "value": "😸"
     },
     {
-        "url": "https://emojipedia.org/cat-with-tears-of-joy/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/cat-with-tears-of-joy_1f639.png",
-        "value": "😹",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/cat-with-tears-of-joy_1f639.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/cat-with-tears-of-joy_1f639.png",
+        "value": "😹"
     },
     {
-        "url": "https://emojipedia.org/smiling-cat-with-heart-eyes/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/smiling-cat-with-heart-eyes_1f63b.png",
-        "value": "😻",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/smiling-cat-with-heart-eyes_1f63b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/smiling-cat-with-heart-eyes_1f63b.png",
+        "value": "😻"
     },
     {
-        "url": "https://emojipedia.org/cat-with-wry-smile/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/cat-with-wry-smile_1f63c.png",
-        "value": "😼",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/cat-with-wry-smile_1f63c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/cat-with-wry-smile_1f63c.png",
+        "value": "😼"
     },
     {
-        "url": "https://emojipedia.org/kissing-cat/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/kissing-cat_1f63d.png",
-        "value": "😽",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/kissing-cat_1f63d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/kissing-cat_1f63d.png",
+        "value": "😽"
     },
     {
-        "url": "https://emojipedia.org/weary-cat/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/weary-cat_1f640.png",
-        "value": "🙀",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/weary-cat_1f640.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/weary-cat_1f640.png",
+        "value": "🙀"
     },
     {
-        "url": "https://emojipedia.org/crying-cat/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/crying-cat_1f63f.png",
-        "value": "😿",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/crying-cat_1f63f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/crying-cat_1f63f.png",
+        "value": "😿"
     },
     {
-        "url": "https://emojipedia.org/pouting-cat/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pouting-cat_1f63e.png",
-        "value": "😾",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pouting-cat_1f63e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pouting-cat_1f63e.png",
+        "value": "😾"
     },
     {
-        "url": "https://emojipedia.org/see-no-evil-monkey/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/see-no-evil-monkey_1f648.png",
-        "value": "🙈",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/see-no-evil-monkey_1f648.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/see-no-evil-monkey_1f648.png",
+        "value": "🙈"
     },
     {
-        "url": "https://emojipedia.org/hear-no-evil-monkey/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/hear-no-evil-monkey_1f649.png",
-        "value": "🙉",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/hear-no-evil-monkey_1f649.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/hear-no-evil-monkey_1f649.png",
+        "value": "🙉"
     },
     {
-        "url": "https://emojipedia.org/speak-no-evil-monkey/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/speak-no-evil-monkey_1f64a.png",
-        "value": "🙊",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/speak-no-evil-monkey_1f64a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/speak-no-evil-monkey_1f64a.png",
+        "value": "🙊"
     },
     {
-        "url": "https://emojipedia.org/pig-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pig-face_1f437.png",
-        "value": "🐷",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pig-face_1f437.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pig-face_1f437.png",
+        "value": "🐷"
     },
     {
-        "url": "https://emojipedia.org/swan/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/swan_1f9a2.png",
-        "value": "🦢",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/swan_1f9a2.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/swan_1f9a2.png",
+        "value": "🦢"
     },
-    
     {
-        "url": "https://emojipedia.org/dog-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/dog-face_1f436.png",
-        "value": "🐶",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/dog-face_1f436.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/dog-face_1f436.png",
+        "value": "🐶"
     },
     {
-        "url": "https://emojipedia.org/panda/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/panda_1f43c.png",
-        "value": "🐼",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/panda_1f43c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/panda_1f43c.png",
+        "value": "🐼"
     },
     {
-        "url": "https://emojipedia.org/frog/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/frog_1f438.png",
-        "value": "🐸",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/frog_1f438.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/frog_1f438.png",
+        "value": "🐸"
     },
     {
-        "url": "https://emojipedia.org/cow-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/cow-face_1f42e.png",
-        "value": "🐮",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/cow-face_1f42e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/cow-face_1f42e.png",
+        "value": "🐮"
     },
     {
-        "url": "https://emojipedia.org/hamster/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/hamster_1f439.png",
-        "value": "🐹",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/hamster_1f439.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/hamster_1f439.png",
+        "value": "🐹"
     },
     {
-        "url": "https://emojipedia.org/mouse-face/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/mouse-face_1f42d.png",
-        "value": "🐭",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/mouse-face_1f42d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/mouse-face_1f42d.png",
+        "value": "🐭"
     },
     {
-        "url": "https://emojipedia.org/chicken/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/chicken_1f414.png",
-        "value": "🐔",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/chicken_1f414.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/chicken_1f414.png",
+        "value": "🐔"
     },
     {
-        "url": "https://emojipedia.org/unicorn/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/unicorn_1f984.png",
-        "value": "🦄",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/unicorn_1f984.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/unicorn_1f984.png",
+        "value": "🦄"
     },
     {
-        "url": "https://emojipedia.org/lizard/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/lizard_1f98e.png",
-        "value": "🦎",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/lizard_1f98e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/lizard_1f98e.png",
+        "value": "🦎"
     },
     {
-        "url": "https://emojipedia.org/snake/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/snake_1f40d.png",
-        "value": "🐍",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/snake_1f40d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/snake_1f40d.png",
+        "value": "🐍"
     },
     {
-        "url": "https://emojipedia.org/penguin/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/penguin_1f427.png",
-        "value": "🐧",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/penguin_1f427.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/penguin_1f427.png",
+        "value": "🐧"
     },
     {
-        "url": "https://emojipedia.org/scorpion/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/scorpion_1f982.png",
-        "value": "🦂",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/scorpion_1f982.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/scorpion_1f982.png",
+        "value": "🦂"
     },
     {
-        "url": "https://emojipedia.org/butterfly/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/butterfly_1f98b.png",
-        "value": "🦋",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/butterfly_1f98b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/butterfly_1f98b.png",
+        "value": "🦋"
     },
     {
-        "url": "https://emojipedia.org/kiss-mark/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/kiss-mark_1f48b.png",
-        "value": "💋",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/kiss-mark_1f48b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/kiss-mark_1f48b.png",
+        "value": "💋"
     },
     {
-        "url": "https://emojipedia.org/love-letter/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/love-letter_1f48c.png",
-        "value": "💌",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/love-letter_1f48c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/love-letter_1f48c.png",
+        "value": "💌"
     },
     {
-        "url": "https://emojipedia.org/heart-with-arrow/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/heart-with-arrow_1f498.png",
-        "value": "💘",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/heart-with-arrow_1f498.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/heart-with-arrow_1f498.png",
+        "value": "💘"
     },
     {
-        "url": "https://emojipedia.org/heart-with-ribbon/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/heart-with-ribbon_1f49d.png",
-        "value": "💝",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/heart-with-ribbon_1f49d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/heart-with-ribbon_1f49d.png",
+        "value": "💝"
     },
     {
-        "url": "https://emojipedia.org/sparkling-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/sparkling-heart_1f496.png",
-        "value": "💖",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/sparkling-heart_1f496.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/sparkling-heart_1f496.png",
+        "value": "💖"
     },
     {
-        "url": "https://emojipedia.org/growing-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/growing-heart_1f497.png",
-        "value": "💗",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/growing-heart_1f497.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/growing-heart_1f497.png",
+        "value": "💗"
     },
     {
-        "url": "https://emojipedia.org/beating-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/beating-heart_1f493.png",
-        "value": "💓",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/beating-heart_1f493.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/beating-heart_1f493.png",
+        "value": "💓"
     },
     {
-        "url": "https://emojipedia.org/revolving-hearts/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/revolving-hearts_1f49e.png",
-        "value": "💞",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/revolving-hearts_1f49e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/revolving-hearts_1f49e.png",
+        "value": "💞"
     },
     {
-        "url": "https://emojipedia.org/broken-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/broken-heart_1f494.png",
-        "value": "💔",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/broken-heart_1f494.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/broken-heart_1f494.png",
+        "value": "💔"
     },
     {
-        "url": "https://emojipedia.org/heart-on-fire/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/heart-on-fire_2764-fe0f-200d-1f525.png",
-        "value": "❤️‍🔥",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/heart-on-fire_2764-fe0f-200d-1f525.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/heart-on-fire_2764-fe0f-200d-1f525.png",
+        "value": "❤️‍🔥"
     },
     {
-        "url": "https://emojipedia.org/mending-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/mending-heart_2764-fe0f-200d-1fa79.png",
-        "value": "❤️‍🩹",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/mending-heart_2764-fe0f-200d-1fa79.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/mending-heart_2764-fe0f-200d-1fa79.png",
+        "value": "❤️‍🩹"
     },
     {
-        "url": "https://emojipedia.org/orange-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/orange-heart_1f9e1.png",
-        "value": "🧡",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/orange-heart_1f9e1.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/orange-heart_1f9e1.png",
+        "value": "🧡"
     },
     {
-        "url": "https://emojipedia.org/yellow-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/yellow-heart_1f49b.png",
-        "value": "💛",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/yellow-heart_1f49b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/yellow-heart_1f49b.png",
+        "value": "💛"
     },
     {
-        "url": "https://emojipedia.org/green-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/green-heart_1f49a.png",
-        "value": "💚",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/green-heart_1f49a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/green-heart_1f49a.png",
+        "value": "💚"
     },
     {
-        "url": "https://emojipedia.org/blue-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/blue-heart_1f499.png",
-        "value": "💙",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/blue-heart_1f499.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/blue-heart_1f499.png",
+        "value": "💙"
     },
     {
-        "url": "https://emojipedia.org/purple-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/purple-heart_1f49c.png",
-        "value": "💜",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/purple-heart_1f49c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/purple-heart_1f49c.png",
+        "value": "💜"
     },
     {
-        "url": "https://emojipedia.org/brown-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/brown-heart_1f90e.png",
-        "value": "🤎",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/brown-heart_1f90e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/brown-heart_1f90e.png",
+        "value": "🤎"
     },
     {
-        "url": "https://emojipedia.org/black-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/black-heart_1f5a4.png",
-        "value": "🖤",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/black-heart_1f5a4.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/black-heart_1f5a4.png",
+        "value": "🖤"
     },
     {
-        "url": "https://emojipedia.org/white-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/white-heart_1f90d.png",
-        "value": "🤍",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/white-heart_1f90d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/white-heart_1f90d.png",
+        "value": "🤍"
     },
     {
-        "url": "https://emojipedia.org/index-pointing-at-the-viewer/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/index-pointing-at-the-viewer_1faf5.png",
-        "value": "🫵",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/index-pointing-at-the-viewer_1faf5.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/index-pointing-at-the-viewer_1faf5.png",
+        "value": "🫵"
     },
     {
-        "url": "https://emojipedia.org/thumbs-down/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/thumbs-down_1f44e.png",
-        "value": "👎",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/thumbs-down_1f44e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/thumbs-down_1f44e.png",
+        "value": "👎"
     },
     {
-        "url": "https://emojipedia.org/raised-fist/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/raised-fist_270a.png",
-        "value": "✊",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/raised-fist_270a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/raised-fist_270a.png",
+        "value": "✊"
     },
     {
-        "url": "https://emojipedia.org/raised-back-of-hand/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/raised-back-of-hand_1f91a.png",
-        "value": "🤚",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/raised-back-of-hand_1f91a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/raised-back-of-hand_1f91a.png",
+        "value": "🤚"
     },
     {
-        "url": "https://emojipedia.org/vulcan-salute/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/vulcan-salute_1f596.png",
-        "value": "🖖",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/vulcan-salute_1f596.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/vulcan-salute_1f596.png",
+        "value": "🖖"
     },
     {
-        "url": "https://emojipedia.org/pinching-hand/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pinching-hand_1f90f.png",
-        "value": "🤏",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pinching-hand_1f90f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pinching-hand_1f90f.png",
+        "value": "🤏"
     },
     {
-        "url": "https://emojipedia.org/middle-finger/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/middle-finger_1f595.png",
-        "value": "🖕",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/middle-finger_1f595.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/middle-finger_1f595.png",
+        "value": "🖕"
     },
     {
-        "url": "https://emojipedia.org/oncoming-fist/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/oncoming-fist_1f44a.png",
-        "value": "👊",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/oncoming-fist_1f44a.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/oncoming-fist_1f44a.png",
+        "value": "👊"
     },
     {
-        "url": "https://emojipedia.org/waving-hand/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/waving-hand_1f44b.png",
-        "value": "👋",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/waving-hand_1f44b.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/waving-hand_1f44b.png",
+        "value": "👋"
     },
     {
-        "url": "https://emojipedia.org/ok-hand/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/ok-hand_1f44c.png",
-        "value": "👌",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/ok-hand_1f44c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/ok-hand_1f44c.png",
+        "value": "👌"
     },
     {
-        "url": "https://emojipedia.org/pinched-fingers/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pinched-fingers_1f90c.png",
-        "value": "🤌",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pinched-fingers_1f90c.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pinched-fingers_1f90c.png",
+        "value": "🤌"
     },
     {
-        "url": "https://emojipedia.org/victory-hand/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/victory-hand_270c-fe0f.png",
-        "value": "✌️",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/victory-hand_270c-fe0f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/victory-hand_270c-fe0f.png",
+        "value": "✌️"
     },
     {
-        "url": "https://emojipedia.org/crossed-fingers/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/crossed-fingers_1f91e.png",
-        "value": "🤞",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/crossed-fingers_1f91e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/crossed-fingers_1f91e.png",
+        "value": "🤞"
     },
     {
-        "url": "https://emojipedia.org/love-you-gesture/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/love-you-gesture_1f91f.png",
-        "value": "🤟",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/love-you-gesture_1f91f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/love-you-gesture_1f91f.png",
+        "value": "🤟"
     },
     {
-        "url": "https://emojipedia.org/backhand-index-pointing-right/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/backhand-index-pointing-right_1f449.png",
-        "value": "👉",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/backhand-index-pointing-right_1f449.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/backhand-index-pointing-right_1f449.png",
+        "value": "👉"
     },
     {
-        "url": "https://emojipedia.org/backhand-index-pointing-left/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/backhand-index-pointing-left_1f448.png",
-        "value": "👈",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/backhand-index-pointing-left_1f448.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/backhand-index-pointing-left_1f448.png",
+        "value": "👈"
     },
     {
-        "url": "https://emojipedia.org/hand-with-index-finger-and-thumb-crossed/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/hand-with-index-finger-and-thumb-crossed_1faf0.png",
-        "value": "🫰",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/hand-with-index-finger-and-thumb-crossed_1faf0.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/hand-with-index-finger-and-thumb-crossed_1faf0.png",
+        "value": "🫰"
     },
     {
-        "url": "https://emojipedia.org/heart-hands/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/heart-hands_1faf6.png",
-        "value": "🫶",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/heart-hands_1faf6.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/heart-hands_1faf6.png",
+        "value": "🫶"
     },
     {
-        "url": "https://emojipedia.org/handshake/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/handshake_1f91d.png",
-        "value": "🤝",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/handshake_1f91d.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/handshake_1f91d.png",
+        "value": "🤝"
     },
     {
-        "url": "https://emojipedia.org/hundred-points/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/hundred-points_1f4af.png",
-        "value": "💯",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/hundred-points_1f4af.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/hundred-points_1f4af.png",
+        "value": "💯"
     },
     {
-        "url": "https://emojipedia.org/anger-symbol/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/anger-symbol_1f4a2.png",
-        "value": "💢",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/anger-symbol_1f4a2.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/anger-symbol_1f4a2.png",
+        "value": "💢"
     },
     {
-        "url": "https://emojipedia.org/collision/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/collision_1f4a5.png",
-        "value": "💥",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/collision_1f4a5.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/collision_1f4a5.png",
+        "value": "💥"
     },
     {
-        "url": "https://emojipedia.org/dizzy/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/dizzy_1f4ab.png",
-        "value": "💫",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/dizzy_1f4ab.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/dizzy_1f4ab.png",
+        "value": "💫"
     },
     {
-        "url": "https://emojipedia.org/sweat-droplets/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/sweat-droplets_1f4a6.png",
-        "value": "💦",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/sweat-droplets_1f4a6.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/sweat-droplets_1f4a6.png",
+        "value": "💦"
     },
     {
-        "url": "https://emojipedia.org/dashing-away/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/dashing-away_1f4a8.png",
-        "value": "💨",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/dashing-away_1f4a8.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/dashing-away_1f4a8.png",
+        "value": "💨"
     },
     {
-        "url": "https://emojipedia.org/hole/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/hole_1f573-fe0f.png",
-        "value": "🕳️",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/hole_1f573-fe0f.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/hole_1f573-fe0f.png",
+        "value": "🕳️"
     },
     {
-        "url": "https://emojipedia.org/bomb/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/bomb_1f4a3.png",
-        "value": "💣",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/bomb_1f4a3.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/bomb_1f4a3.png",
+        "value": "💣"
     },
     {
-        "url": "https://emojipedia.org/brain/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/brain_1f9e0.png",
-        "value": "🧠",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/brain_1f9e0.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/brain_1f9e0.png",
+        "value": "🧠"
     },
     {
-        "url": "https://emojipedia.org/anatomical-heart/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/anatomical-heart_1fac0.png",
-        "value": "🫀",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/anatomical-heart_1fac0.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/anatomical-heart_1fac0.png",
+        "value": "🫀"
     },
     {
-        "url": "https://emojipedia.org/no-one-under-eighteen/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/no-one-under-eighteen_1f51e.png",
-        "value": "🔞",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/no-one-under-eighteen_1f51e.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/no-one-under-eighteen_1f51e.png",
+        "value": "🔞"
     },
     {
-        "url": "https://emojipedia.org/briefs/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/briefs_1fa72.png",
-        "value": "🩲",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/briefs_1fa72.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/briefs_1fa72.png",
+        "value": "🩲"
     },
     {
-        "url": "https://emojipedia.org/thong-sandal/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/thong-sandal_1fa74.png",
-        "value": "🩴",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/thong-sandal_1fa74.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/thong-sandal_1fa74.png",
+        "value": "🩴"
     },
     {
-        "url": "https://emojipedia.org/1st-place-medal/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/1st-place-medal_1f947.png",
-        "value": "🥇",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/1st-place-medal_1f947.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/1st-place-medal_1f947.png",
+        "value": "🥇"
     },
     {
-        "url": "https://emojipedia.org/2nd-place-medal/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/2nd-place-medal_1f948.png",
-        "value": "🥈",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/2nd-place-medal_1f948.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/2nd-place-medal_1f948.png",
+        "value": "🥈"
     },
     {
-        "url": "https://emojipedia.org/3rd-place-medal/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/3rd-place-medal_1f949.png",
-        "value": "🥉",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/3rd-place-medal_1f949.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/3rd-place-medal_1f949.png",
+        "value": "🥉"
     },
     {
-        "url": "https://emojipedia.org/pool-8-ball/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/pool-8-ball_1f3b1.png",
-        "value": "🎱",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/pool-8-ball_1f3b1.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/pool-8-ball_1f3b1.png",
+        "value": "🎱"
     },
     {
-        "url": "https://emojipedia.org/trophy/",
-        "image_url": "https://em-content.zobj.net/source/microsoft-3D-fluent/406/trophy_1f3c6.png",
-        "value": "🏆",
-        "image_anim_url": "https://em-content.zobj.net/source/microsoft-teams/363/trophy_1f3c6.png"
+        "url": "https://em-content.zobj.net/source/facebook/355/trophy_1f3c6.png",
+        "value": "🏆"
     }
 ]
