@@ -177,8 +177,9 @@ function loadModal(EMOJI_LIST) {
     moreReactions.appendChild(menuContainer);
 
     // Kiểm tra và tạo nút react, tạo menu
+    
     const injectInitialMoreReactions = () => {
-        const storiesFooter = document.querySelector('.x11lhmoz.x78zum5.x1q0g3np.xsdox4t.x10l6tqk.xtzzx4i.xwa60dl.xl56j7k.xtuxyv6');
+        const storiesFooter = document.querySelector('.x11lhmoz.x78zum5.x1q0g3np.xsdox4t.xbudbmw.x10l6tqk.xwa60dl.xl56j7k.xtuxyv6');
         if (!storiesFooter) return false;
 
         const defaultReactions = Array.from(storiesFooter.querySelectorAll('.x78zum5.xl56j7k'))

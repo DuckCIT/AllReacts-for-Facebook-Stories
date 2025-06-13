@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.0.8
+- Fixed bug (Facebook changed class name)
+
 ## v1.0.7
 - Optimized performance by removing hover-to-animate effect on emojis.
 - Emojis are now static images consistent with Facebook's style.
