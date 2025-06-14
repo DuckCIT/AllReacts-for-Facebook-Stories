@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     :root {
       --bg-color: #0d1117;
@@ -13,22 +15,25 @@
       --shadow-color: rgba(0, 0, 0, 0.5);
     }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       background: var(--bg-color);
       color: var(--text-color);
       font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .popup-container {
-      padding: 12px;
       user-select: none;
       min-width: 280px;
       max-width: 500px;
       width: auto;
       border-radius: 10px;
+      padding: 15px;
       text-align: center;
       transition: all 0.3s ease;
     }
@@ -38,6 +43,7 @@
       display: flex;
       font-weight: bold;
       align-items: center;
+      margin: -5px 5px -5px;
       justify-content: space-between;
     }
 
@@ -56,48 +62,6 @@
 
     .close-btn:hover {
       color: var(--primary-color);
-    }
-
-    .extension-info {
-      display: flex;
-      align-items: center;
-      margin-top: 10px;
-      padding: 10px;
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      background: var(--hover-bg);
-      cursor: pointer;
-      transition: background 0.3s ease, transform 0.3s ease;
-    }
-
-    .extension-info:hover {
-      background: var(--border-color);
-      transform: scale(1.02);
-    }
-
-    .extension-info img {
-      width: 45px;
-      height: 45px;
-      margin-right: 10px;
-      border-radius: 6px;
-    }
-
-    .extension-details {
-      text-align: left;
-      font-size: 12px;
-    }
-
-    .more-extensions a {
-      display: block;
-      text-decoration: none;
-      color: var(--primary-color);
-      font-size: 12px;
-      margin-top: 5px;
-      transition: color 0.3s ease;
-    }
-
-    .more-extensions a:hover {
-      color: #79c0ff;
     }
 
     label {
@@ -153,7 +117,34 @@
     hr {
       border: none;
       border-top: 1px solid var(--border-color);
-      margin: 8px 0;
+      margin: 15px -100%;
+    }
+    .footer {
+      display: flex;
+      margin-top: -5px;
+      justify-content: space-around;
+      border-top: 1px solid var(--border-color);
+      background: #0d1117;
+    }
+
+    .footer button {
+      background: none;
+      border: none;
+      color: #8793a3;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .footer button:hover {
+      background: var(--border-color);
+      color: white;
+    }
+    @keyframes pulse {
+      0% { color: #82bcff }
+      50% { color: #0077ff }
+      100% { color: #82bcff }
     }
   </style>
 </head>
@@ -170,15 +161,12 @@
       <span>Hide the seen status on Facebook Stories</span>
     </label>
     <p class="sub-title-popup">Refresh the page (F5) to activate the feature</p>
-    <div class="more-extensions">
-      <span class="sub-title-popup">More Extensions</span>
-      <div class="extension-info" data-url='https://github.com/DuckCIT/Facebook-Avatar-Guard'>
-        <div class="extension-details">
-          <strong>Facebook Avatar Guard</strong><br>
-          <small>Allows toggle Facebook profile picture guard.</small>
-        </div>
-      </div>
-    </div>
+  </div>
+  <div class="footer">
+    <button title="Github"><i class="fa-brands fa-github"></i></button>
+    <button title="Source"><i class="fa-solid fa-code"></i></button>
+    <button title="Facebook"><i class="fa-brands fa-facebook"></i></button>
+    <button title="Update" id="update-button"><i class="fas fa-arrow-alt-circle-down"></i></button>
   </div>
 </body>
 <script src="popup.js"></script>

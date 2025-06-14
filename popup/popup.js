@@ -17,16 +17,7 @@ const closeButton = document.querySelector('.close-btn');
 closeButton.addEventListener('click', function () {
     window.close(); // Đóng popup khi nhấn vào mũi tên
 });
-document.querySelectorAll(".extension-info").forEach(function (item) {
-    item.addEventListener("click", function () {
-        const url = this.getAttribute("data-url");
-        if (chrome.tabs) {
-            chrome.tabs.create({ url: url });
-        } else {
-            window.open(url, "_blank");
-        }
-    });
-});
+
 
 
 // Khi popup được mở, đọc trạng thái toggle từ chrome.storage
@@ -35,62 +26,44 @@ chrome.storage.sync.get('toggleState', function (data) {
     toggle.checked = data.toggleState !== undefined ? data.toggleState : false;
 });
 
-// --- UPDATE NOTIFICATION LOGIC ---
-const popupContainer = document.getElementById('popup');
-
-fetch('https://raw.githubusercontent.com/DuckCIT/AllReacts-for-Facebook-Stories/main/data/version.json')
-    .then(response => response.json())
-    .then(data => {
-        chrome.runtime.getManifest ? checkAndShowUpdate(data.version, data.donate) : null;
-    });
-
-function checkAndShowUpdate(latestVersion, donateUrl) {
-    const currentVersion = chrome.runtime.getManifest().version;
-    if (compareVersions(latestVersion, currentVersion) > 0) {
-        fetchChangelogAndShow(latestVersion);
-    } else if (donateUrl) {
-        // Optionally, show donate message
+document.querySelectorAll('.footer button').forEach(button => {
+    const icon = button.querySelector('i');
+    if (!icon) return;
+    let url = null;
+    if (icon.classList.contains('fa-github')) url = 'https://github.com/DuckCIT';
+    if (icon.classList.contains('fa-code')) url = 'https://github.com/DuckCIT/AllReacts-for-Facebook-Stories';
+    if (icon.classList.contains('fa-facebook')) url = 'https://facebook.com/tducxD';
+    if (url) {
+        button.addEventListener('click', () => chrome.tabs.create({ url }));
     }
-}
+});
 
-function compareVersions(v1, v2) {
-    // Compare version strings like '1.0.8' vs '1.0.7'
-    const a = v1.split('.').map(Number);
-    const b = v2.split('.').map(Number);
-    for (let i = 0; i < Math.max(a.length, b.length); i++) {
-        const diff = (a[i] || 0) - (b[i] || 0);
-        if (diff !== 0) return diff;
-    }
-    return 0;
-}
+// --- Footer Update Button Version Check ---
+const updateButton = document.getElementById('update-button');
+const currentVersion = chrome.runtime.getManifest().version;
+const versionURL = 'https://raw.githubusercontent.com/DuckCIT/AllReacts-for-Facebook-Stories/main/data/version.json';
 
-function showUpdatePopup(newVersion, changelog) {
-    // Remove previous notification if exists
-    const old = document.getElementById('update-notification');
-    if (old) old.remove();
-    const notif = document.createElement('div');
-    notif.id = 'update-notification';
-    notif.className = 'update-popup-simple';
-    notif.innerHTML = `
-        <div><br><b>New update available: v${newVersion}!</b></div>
-        <div style="margin-top:4px; font-size:12px; color:#c9d1d9; white-space:pre-line;">${changelog ? changelog : 'Visit GitHub for more details.'}</div>
-    `;
-    popupContainer.appendChild(notif);
-}
+if (updateButton) {
+    fetch(versionURL)
+        .then(response => response.json())
+        .then(data => {
+            const latestVersion = data.version;
+            const changelogURL = data.changelog;
 
-// Lấy changelog mới nhất từ GitHub
-function fetchChangelogAndShow(version) {
-    fetch('https://raw.githubusercontent.com/DuckCIT/AllReacts-for-Facebook-Stories/main/CHANGELOG.md')
-        .then(res => res.text())
-        .then(md => {
-            // Tìm changelog cho version mới nhất
-            const regex = new RegExp(`## v${version.replace(/\./g, '\\.')}(.*?)(?=## v|$)`, 's');
-            const match = md.match(regex);
-            let log = '';
-            if (match) {
-                log = match[1].replace(/^- /gm, '• ').trim();
+            if (currentVersion !== latestVersion) {
+                updateButton.title = `New version ${latestVersion} available! Click to see details.`;
+                updateButton.style.color = 'var(--primary-color)';
+                updateButton.style.animation = 'pulse 1.2s infinite';
+
+                updateButton.addEventListener('click', () => {
+                    chrome.tabs.create({ url: changelogURL });
+                });
+            } else {
+                updateButton.title = `You're up to date! (v${currentVersion})`;
             }
-            showUpdatePopup(version, log);
         })
-        .catch(() => showUpdatePopup(version, 'Visit GitHub for more details.'));
+        .catch(error => {
+            console.error('Failed to fetch version info:', error);
+            updateButton.title = `Update check failed`;
+        });
 }

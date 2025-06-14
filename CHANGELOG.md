@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.9
+- Applied Facebook's native class styles to emoji list items for consistent UI.
+- Added support for loading `emoji.json` and `facebook.json` from GitHub with local file fallback for easier updates.
+
 ## v1.0.8
 - Fixed bug (Facebook changed class name)
 
@@ -7,7 +11,6 @@
 - Optimized performance by removing hover-to-animate effect on emojis.
 - Emojis are now static images consistent with Facebook's style.
 - Faster UI loading.
-
 
 ## v1.0.6
 - Support for Firefox.
