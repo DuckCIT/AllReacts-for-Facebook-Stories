@@ -1,11 +1,12 @@
 // Lấy phần tử toggle từ DOM
 const toggle = document.getElementById('toggle-switch');
+const extension = typeof browser !== 'undefined' ? browser : chrome;
 
 // Khi trạng thái của toggle thay đổi (chuyển qua lại giữa ON/OFF)
 toggle.addEventListener('change', function () {
     const isChecked = toggle.checked; // Kiểm tra xem toggle có được bật hay không
     // Lưu trạng thái của toggle vào chrome.storage để lưu trữ dữ liệu
-    chrome.storage.sync.set({ toggleState: isChecked }, function () {
+    extension.storage.sync.set({ toggleState: isChecked }, function () {
         console.log('Toggle state saved:', isChecked); // Ghi log khi trạng thái đã được lưu
     });
 });
@@ -21,7 +22,7 @@ closeButton.addEventListener('click', function () {
 
 
 // Khi popup được mở, đọc trạng thái toggle từ chrome.storage
-chrome.storage.sync.get('toggleState', function (data) {
+extension.storage.sync.get('toggleState', function (data) {
     // Nếu không có trạng thái lưu trước đó (lần đầu mở popup), mặc định là false
     toggle.checked = data.toggleState !== undefined ? data.toggleState : false;
 });
@@ -34,13 +35,13 @@ document.querySelectorAll('.footer button').forEach(button => {
     if (icon.classList.contains('fa-code')) url = 'https://github.com/DuckCIT/AllReacts-for-Facebook-Stories';
     if (icon.classList.contains('fa-facebook')) url = 'https://facebook.com/tducxD';
     if (url) {
-        button.addEventListener('click', () => chrome.tabs.create({ url }));
+        button.addEventListener('click', () => extension.tabs.create({ url }));
     }
 });
 
 // --- Footer Update Button Version Check ---
 const updateButton = document.getElementById('update-button');
-const currentVersion = chrome.runtime.getManifest().version;
+const currentVersion = extension.runtime.getManifest().version;
 const versionURL = 'https://raw.githubusercontent.com/DuckCIT/AllReacts-for-Facebook-Stories/main/data/version.json';
 
 if (updateButton) {
@@ -56,7 +57,7 @@ if (updateButton) {
                 updateButton.style.animation = 'pulse 1.2s infinite';
 
                 updateButton.addEventListener('click', () => {
-                    chrome.tabs.create({ url: changelogURL });
+                    extension.tabs.create({ url: changelogURL });
                 });
             } else {
                 updateButton.title = `You're up to date! (v${currentVersion})`;

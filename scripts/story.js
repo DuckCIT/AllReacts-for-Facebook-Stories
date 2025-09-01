@@ -274,12 +274,13 @@ function loadModal(EMOJI_LIST) {
 
 // Hàm tìm nút phát/tạm dừng story
 function getButton() {
-    // Lấy tất cả các nút với role="button"
     const buttons = document.querySelectorAll('[role="button"]');
-    // Chuyển NodeList thành mảng và tìm nút chứa div có lớp cụ thể
-    return Array.from(buttons).find(button =>
+    // Lọc tất cả nút có chứa div class cụ thể
+    const matched = Array.from(buttons).filter(button =>
         button.querySelector(`div.${FB_CLASSES.buttonDiv.split(' ').join('.')}`)
     );
+    // Trả về nút thứ 2 (index 1), nếu có
+    return matched[1] || null;
 }
 
 // Hàm thêm emoji vào nhóm emoji
