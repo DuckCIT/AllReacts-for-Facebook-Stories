@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "AllReacts for Facebook Stories",
   "description": "Enhance your Facebook Stories experience with a variety of emoji reactions and hide your 'seen' status!",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

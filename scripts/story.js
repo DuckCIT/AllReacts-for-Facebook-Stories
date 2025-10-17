@@ -205,6 +205,13 @@ function loadModal(EMOJI_LIST) {
         if (!storiesFooter) return false;
         const defaultReactions = Array.from(storiesFooter.querySelectorAll(`.${FB_CLASSES.defaultReactions.split(' ').join('.')}`))
             .find(el => el.offsetWidth === 336);
+        const container = defaultReactions.parentElement;
+        if (container) {
+            container.style.display = 'flex';
+            container.style.flexWrap = 'nowrap';
+            container.style.alignItems = 'center';
+            container.style.justifyContent = 'center';
+        }
         if (!defaultReactions) return false;
         if (!storiesFooter.querySelector('.more-reactions')) {
             defaultReactions.insertAdjacentElement('afterend', moreReactions);
@@ -228,6 +235,13 @@ function loadModal(EMOJI_LIST) {
         if (!storiesFooter) return false;
         const defaultReactions = Array.from(storiesFooter.querySelectorAll(`.${FB_CLASSES.defaultReactions.split(' ').join('.')}`))
             .find(el => el.offsetWidth === 336);
+        const container = defaultReactions.parentElement;
+        if (container) {
+            container.style.display = 'flex';
+            container.style.flexWrap = 'nowrap';
+            container.style.alignItems = 'center';
+            container.style.justifyContent = 'center';
+        }
         if (!defaultReactions) {
             // Nếu reactions mặc định không tồn tại, xóa "More Reactions"
             if (moreReactions.parentElement) {

@@ -42,7 +42,6 @@
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
-    transform: translateY(3.5px);
     transition: all 0.15s ease-in-out;
     animation: fadein 0.2s;
     backdrop-filter: blur(15px);
