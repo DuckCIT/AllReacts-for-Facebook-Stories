@@ -40,7 +40,7 @@ async function loadEmojis() {
     }
     try {
         // Thử tải từ GitHub
-        const githubUrl = 'https://raw.githubusercontent.com/DuckCIT/AllReacts-for-Facebook-Stories/main/data/emoji.json';
+        const githubUrl = 'https://raw.githubusercontent.com/DuckCIT/AllReacts-for-Facebook-Stories/main/data/emojis.json';
         let response = await fetch(githubUrl);
         if (!response.ok) throw new Error(`Failed to fetch emoji from GitHub: ${response.status}`);
         EMOJI_LIST = await response.json();
@@ -49,15 +49,15 @@ async function loadEmojis() {
     } catch (e) {
         // Fallback về file cục bộ
         try {
-            const localUrl = extension.runtime.getURL('data/emoji.json');
+            const localUrl = extension.runtime.getURL('data/emojis.json');
             const response = await fetch(localUrl);
             if (!response.ok) throw new Error(`Failed to fetch local emoji: ${response.status}`);
             EMOJI_LIST = await response.json();
-            showToast("Loading class from GitHub failed, using local file.");
+            showToast("Loading from GitHub failed, using local file.");
             await loadFacebookClasses();
             loadModal(EMOJI_LIST);
         } catch (localError) {
-            console.error('Error loading local emoji.json:', localError);
+            console.error('Error loading local emojis.json:', localError);
             showToast("Unable to load emoji.");
         }
     }
@@ -68,45 +68,50 @@ async function loadEmojis() {
     loadEmojis(); // Chỉ tải lại emoji khi cần
 })();
 
-function getEmojiNameFromUrl(url) {
-    // Tách URL thành các phần nhỏ bằng dấu '/'
-    const parts = url.split('/');
-    // Lấy phần cuối cùng của URL, đó là tên file
+function getEmojiName(emoji) {
+    // Nếu có trường name, sử dụng trực tiếp
+    if (emoji.name) {
+        return emoji.name;
+    }
+    // Fallback: Tách tên từ URL
+    const parts = emoji.url.split('/');
     const fileName = parts[parts.length - 1];
-    // Lấy tên emoji từ tên file (trước dấu '_') và thay thế dấu '-' bằng dấu cách
     const emojiName = fileName.split('_')[0].replace(/-/g, ' ');
     return emojiName;
 }
 
-function checkUpdate(linkWithTooltip) {
-    // Gửi tin nhắn đến background script để kiểm tra version
-    extension.runtime.sendMessage({ action: "checkUpdate" }, (response) => {
-        if (extension.runtime.lastError) {
-            return; // Bỏ qua lỗi nếu có
-        }
-        const data = response.data;
-        const currentVersion = extension.runtime.getManifest().version;
-        if (data.version > currentVersion) {
-            linkWithTooltip.setAttribute('tooltip', 'Please check for update here v' + data.version);
-            linkWithTooltip.setAttribute('href', 'https://github.com/DuckCIT/AllReacts-for-Facebook-Stories');
-            setTimeout(() => {
-                linkWithTooltip.classList.add('show-tooltip');
-            }, 500);
-            setTimeout(() => {
-                linkWithTooltip.classList.remove('show-tooltip');
-            }, 3000);
-        } else if (data.donate) {
-            linkWithTooltip.setAttribute('tooltip', 'Click here to visit the author\'s support page ☕︎');
-            linkWithTooltip.setAttribute('href', data.donate);
-        }
-    });
+// Check for updates and add badge to button if available
+function checkUpdate(btnReact) {
+    const versionURL = 'https://raw.githubusercontent.com/DuckCIT/AllReacts-for-Facebook-Stories/main/data/version.json';
+    const currentVersion = extension.runtime.getManifest().version;
+    
+    fetch(versionURL)
+        .then(response => response.json())
+        .then(data => {
+            if (data.version > currentVersion) {
+                // Add update badge to button
+                const badge = document.createElement('div');
+                badge.setAttribute('class', 'update-badge');
+                badge.title = `Update available: v${data.version}`;
+                btnReact.appendChild(badge);
+                btnReact.style.position = 'relative';
+            }
+        })
+        .catch(error => {
+            console.log('Update check failed:', error);
+        });
 }
 
-function loadModal(EMOJI_LIST) {
+function loadModal(EMOJI_DATA) {
     if (!FB_CLASSES) return; // Đảm bảo class đã được tải
     // Lấy fb_dtsg và user_id
     const fb_dtsg = getFbdtsg();
     const user_id = getUserId();
+    
+    // Xử lý cấu trúc mới của emoji data
+    const categories = getCategoriesFromData(EMOJI_DATA);
+    const allEmojis = getAllEmojisFromData(EMOJI_DATA);
+    
     // Tạo nút react
     const btnReact = document.createElement('div');
     btnReact.setAttribute('class', 'btn-react');
@@ -116,27 +121,16 @@ function loadModal(EMOJI_LIST) {
         <line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="3" stroke-linecap="round"></line>
     </svg>
     `;
+    
+    // Check for updates and show badge if available
+    checkUpdate(btnReact);
+    
     // Tạo nhóm emoji
     const emojiGroup = document.createElement('ul');
     emojiGroup.setAttribute('class', 'emoji-group');
     // Tạo container menu
     const menuContainer = document.createElement('div');
     menuContainer.setAttribute('class', 'menu-container');
-    // Tạo tiêu đề và tiêu đề phụ cho menu
-    const title = document.createElement('span');
-    title.setAttribute('class', 'title');
-    title.textContent = 'AllReacts Facebook Stories';
-    title.setAttribute('tooltip', 'If you reacted but don’t see your reaction on the story, try refreshing the page (F5).');
-
-    const subTitle = document.createElement('span');
-    subTitle.setAttribute('class', 'sub-title');
-    subTitle.innerHTML = 'Developed by <a tooltip="No new updates available" href="https://www.facebook.com/tducxD" target="_blank" style="color: #00a1f1;">Nguyen Trong Duc</a>';
-
-    const linkWithTooltip = subTitle.querySelector('a[tooltip]');
-    let updateChecked = false;
-    // Thêm tiêu đề và tiêu đề phụ vào menu container
-    menuContainer.appendChild(title);
-    menuContainer.appendChild(subTitle);
     // Biến timeout để xử lý sự kiện mouseover/mouseout
     let timeout;
     // Xử lý khi chuột di vào nút react
@@ -145,10 +139,6 @@ function loadModal(EMOJI_LIST) {
         btnReact.style.border = '1.5px solid white';
         menuContainer.classList.add('show');
         rotateIcon(45);
-        if (!updateChecked) {
-            checkUpdate(linkWithTooltip);
-            updateChecked = true;
-        }
         clearTimeout(timeout);
     });
     // Xử lý khi chuột rời khỏi nút react
@@ -181,18 +171,185 @@ function loadModal(EMOJI_LIST) {
         icon.style.transition = 'transform 0.5s';
         icon.style.transform = `rotate(${degrees}deg)`;
     }
-    // Lấy lịch sử emoji từ localStorage
-    const emojiHistory = JSON.parse(localStorage.getItem('emojiHistory')) || [];
-    // Thêm emoji từ lịch sử vào nhóm emoji
-    groupEmoji(fb_dtsg, user_id, emojiGroup, emojiHistory);
-    // Lọc emoji mới chưa có trong lịch sử
-    const filteredEmojiList = EMOJI_LIST.filter(emoji =>
-        !emojiHistory.some(historyItem => historyItem.value === emoji.value)
-    );
-    // Thêm emoji mới vào nhóm emoji
-    groupEmoji(fb_dtsg, user_id, emojiGroup, filteredEmojiList);
-    // Thêm nhóm emoji vào menu container
+    
+    // Mapping category IDs and labels
+    const categoryNames = ['Recent', 'people', 'nature', 'foods', 'activity', 'places', 'objects', 'symbols', 'flags'];
+    const categoryLabels = ['Recent', 'Smileys & People', 'Animals & Nature', 'Food & Drink', 'Activity', 'Travel & Places', 'Objects', 'Symbols', 'Flags'];
+    
+    // SVG icons cho từng category
+    const categoryIconsSVG = {
+        'Recent': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>',
+        'people': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><circle cx="15.5" cy="9.5" r="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/></svg>',
+        'nature': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><circle cx="4.5" cy="9.5" r="2.5"/><circle cx="9" cy="5.5" r="2.5"/><circle cx="15" cy="5.5" r="2.5"/><circle cx="19.5" cy="9.5" r="2.5"/><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"/></svg>',
+        'foods': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.20-1.10-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/></svg>',
+        'activity': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9l5.31 5.31c.31.31.85.09.85-.36V6c0-.28.22-.5.5-.5s.5.22.5.5v8c0 .28.22.5.5.5s.5-.22.5-.5v-4c0-.28.22-.5.5-.5s.5.22.5.5v4c0 .28.22.5.5.5s.5-.22.5-.5v-2c0-.28.22-.5.5-.5s.5.22.5.5v6.48c0 .31.13.61.36.83l1.31 1.31C16.55 19.37 14.85 20 13 20h-1z"/></svg>',
+        'places': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.56 3.91c.59.59.59 1.54 0 2.12l-3.89 3.89 2.12 9.19-1.41 1.42-3.88-7.43L9.6 17l.36 2.47-1.07 1.06-1.76-3.18-3.19-1.77L5 14.5l2.5.37 3.88-3.89-7.42-3.88 1.41-1.41 9.19 2.12 3.89-3.89c.56-.58 1.56-.58 2.11 0z"/></svg>',
+        'objects': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>',
+        'symbols': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'flags': '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg>'
+    };
+    
+    // Tạo search container với icon
+    const searchContainer = document.createElement('div');
+    searchContainer.style.position = 'relative';
+    searchContainer.style.width = '100%';
+    
+    const searchIcon = document.createElement('div');
+    searchIcon.setAttribute('class', 'emoji-search-icon');
+    searchIcon.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>';
+    
+    const searchBox = document.createElement('input');
+    searchBox.setAttribute('type', 'text');
+    searchBox.setAttribute('class', 'emoji-search');
+    searchBox.setAttribute('placeholder', 'Search emoji');
+    
+    searchContainer.appendChild(searchIcon);
+    searchContainer.appendChild(searchBox);
+    
+    // Render tất cả emoji với category headers
+    const renderAllEmojis = () => {
+        emojiGroup.innerHTML = '';
+        
+        categoryNames.forEach((catName, index) => {
+            const emojisInCategory = categories[catName] || [];
+            
+            // Tạo category header (luôn hiển thị dù chưa có emoji)
+            const categoryHeader = document.createElement('div');
+            categoryHeader.setAttribute('class', 'emoji-category-header');
+            categoryHeader.setAttribute('data-category', catName);
+            categoryHeader.textContent = categoryLabels[index];
+            emojiGroup.appendChild(categoryHeader);
+            
+            // Thêm emojis của category này (nếu có)
+            if (emojisInCategory.length > 0) {
+                groupEmoji(fb_dtsg, user_id, emojiGroup, emojisInCategory);
+            } else if (catName === 'Recent') {
+                // Hiển thị thông báo khi chưa có emoji gần đây
+                const emptyRecent = document.createElement('div');
+                emptyRecent.setAttribute('class', 'empty-recent');
+                emptyRecent.innerHTML = `
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="#666">
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/>
+                    </svg>
+                    <p>No emoji used yet</p>
+                    <span>Emoji you use will appear here</span>
+                `;
+                emojiGroup.appendChild(emptyRecent);
+            }
+        });
+    };
+    
+    // Search functionality với debounce
+    let isSearching = false;
+    let searchTimeout = null;
+    
+    searchBox.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        
+        // Clear timeout cũ nếu có
+        if (searchTimeout) {
+            clearTimeout(searchTimeout);
+        }
+        
+        // Nếu không có từ khóa, render lại ngay
+        if (!searchTerm) {
+            isSearching = false;
+            renderAllEmojis();
+            return;
+        }
+        
+        // Debounce: chờ 300ms sau khi ngừng gõ mới search
+        searchTimeout = setTimeout(() => {
+            isSearching = true;
+            emojiGroup.innerHTML = '';
+            
+            const searchHeader = document.createElement('div');
+            searchHeader.setAttribute('class', 'emoji-category-header');
+            searchHeader.textContent = 'Search Results';
+            emojiGroup.appendChild(searchHeader);
+            
+            const searchResults = allEmojis.filter(emoji => {
+                const emojiName = getEmojiName(emoji).toLowerCase();
+                return emojiName.includes(searchTerm) || emoji.value.includes(searchTerm);
+            });
+            
+            if (searchResults.length > 0) {
+                // Giới hạn kết quả để tránh lag
+                const limitedResults = searchResults.slice(0, 100);
+                groupEmoji(fb_dtsg, user_id, emojiGroup, limitedResults);
+                
+                if (searchResults.length > 100) {
+                    const moreInfo = document.createElement('div');
+                    moreInfo.style.cssText = 'text-align: center; padding: 10px; color: #999; grid-column: 1 / -1; font-size: 12px;';
+                    moreInfo.textContent = `Showing 100/${searchResults.length} results. Try a more specific search.`;
+                    emojiGroup.appendChild(moreInfo);
+                }
+            } else {
+                emojiGroup.innerHTML += '<div style="text-align: center; padding: 20px; color: #999; grid-column: 1 / -1;">No results found</div>';
+            }
+        }, 300);
+    });
+    
+    // Tạo category tabs
+    const categoryTabs = document.createElement('div');
+    categoryTabs.setAttribute('class', 'emoji-category-tabs');
+    
+    categoryNames.forEach((catName, index) => {
+        const tab = document.createElement('button');
+        tab.setAttribute('class', 'emoji-category-tab' + (index === 0 ? ' active' : ''));
+        tab.setAttribute('data-category', catName);
+        tab.innerHTML = categoryIconsSVG[catName];
+        tab.title = categoryLabels[index];
+        
+        tab.addEventListener('click', () => {
+            if (isSearching) {
+                searchBox.value = '';
+                isSearching = false;
+                renderAllEmojis();
+            }
+            
+            // Update active tab
+            categoryTabs.querySelectorAll('.emoji-category-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            
+            // Scroll to category
+            const categoryHeader = emojiGroup.querySelector(`[data-category="${catName}"]`);
+            if (categoryHeader) {
+                categoryHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+        
+        categoryTabs.appendChild(tab);
+    });
+    
+    // Initial render - hiển thị tất cả
+    renderAllEmojis();
+    
+    // Scroll listener để update active tab
+    emojiGroup.addEventListener('scroll', () => {
+        if (isSearching) return;
+        
+        const headers = emojiGroup.querySelectorAll('.emoji-category-header');
+        const scrollTop = emojiGroup.scrollTop;
+        
+        headers.forEach((header, index) => {
+            const headerTop = header.offsetTop - emojiGroup.offsetTop;
+            const nextHeader = headers[index + 1];
+            const nextHeaderTop = nextHeader ? nextHeader.offsetTop - emojiGroup.offsetTop : emojiGroup.scrollHeight;
+            
+            if (scrollTop >= headerTop - 10 && scrollTop < nextHeaderTop - 10) {
+                const catName = header.getAttribute('data-category');
+                categoryTabs.querySelectorAll('.emoji-category-tab').forEach(t => t.classList.remove('active'));
+                const activeTab = categoryTabs.querySelector(`[data-category="${catName}"]`);
+                if (activeTab) activeTab.classList.add('active');
+            }
+        });
+    });
+    
+    // Thêm các phần tử vào menu container theo thứ tự: search, emojiGroup, tabs
+    menuContainer.appendChild(searchContainer);
     menuContainer.appendChild(emojiGroup);
+    menuContainer.appendChild(categoryTabs);
     // Tạo phần "More Reactions"
     const moreReactions = document.createElement('div');
     moreReactions.setAttribute('class', 'more-reactions');
@@ -297,6 +454,52 @@ function getButton() {
     return matched[1] || null;
 }
 
+// Hàm lấy categories từ data mới
+function getCategoriesFromData(emojiData) {
+    const categories = {
+        'Recent': []
+    };
+    
+    // Lấy lịch sử emoji và sắp xếp theo thứ tự sử dụng gần nhất
+    const emojiHistory = JSON.parse(localStorage.getItem('emojiHistory')) || [];
+    const allEmojis = getAllEmojisFromData(emojiData);
+    
+    // Map theo thứ tự trong history (gần nhất trước)
+    categories['Recent'] = emojiHistory
+        .map(h => allEmojis.find(emoji => emoji.value === h.value) || h)
+        .filter(emoji => emoji && emoji.url)
+        .slice(0, 30);
+    
+    // Nếu data có cấu trúc categories mới
+    if (emojiData.categories && Array.isArray(emojiData.categories)) {
+        emojiData.categories.forEach(cat => {
+            categories[cat.id] = cat.emojis || [];
+        });
+    } else if (Array.isArray(emojiData)) {
+        // Fallback cho cấu trúc cũ (mảng emoji đơn giản)
+        categories['people'] = emojiData;
+    }
+    
+    return categories;
+}
+
+// Hàm lấy tất cả emoji từ data (để search)
+function getAllEmojisFromData(emojiData) {
+    let allEmojis = [];
+    
+    if (emojiData.categories && Array.isArray(emojiData.categories)) {
+        emojiData.categories.forEach(cat => {
+            if (cat.emojis && Array.isArray(cat.emojis)) {
+                allEmojis = allEmojis.concat(cat.emojis);
+            }
+        });
+    } else if (Array.isArray(emojiData)) {
+        allEmojis = emojiData;
+    }
+    
+    return allEmojis;
+}
+
 // Hàm thêm emoji vào nhóm emoji
 function groupEmoji(fb_dtsg, user_id, emojiGroup, emojiList) {
     let tooltipTimeout;
@@ -339,7 +542,7 @@ function groupEmoji(fb_dtsg, user_id, emojiGroup, emojiList) {
         observer.observe(emojiLi);
         const tooltip = document.createElement('div');
         tooltip.classList.add('info-emoji');
-        tooltip.textContent = getEmojiNameFromUrl(emoji.url);
+        tooltip.textContent = getEmojiName(emoji);
         // Sự kiện khi chuột vào emoji
         emojiLi.addEventListener('mouseenter', () => {
             const stopButton = getButton();
@@ -404,7 +607,7 @@ function groupEmoji(fb_dtsg, user_id, emojiGroup, emojiList) {
             }, 200);
             const storyId = getStoryId();
             try {
-                saveEmojiToHistory(emoji.value, emoji.url);
+                saveEmojiToHistory(emoji.value, emoji.url, emoji.name);
                 await reactStory(user_id, fb_dtsg, storyId, emoji.value);
             } catch (e) {
                 console.error(e);
@@ -424,11 +627,14 @@ function groupEmoji(fb_dtsg, user_id, emojiGroup, emojiList) {
     });
 }
 
-function saveEmojiToHistory(emojiValue, emojiImageUrl) {
+function saveEmojiToHistory(emojiValue, emojiImageUrl, emojiName = null) {
     // Lấy lịch sử emoji từ localStorage (nếu không có thì khởi tạo mảng rỗng)
     let emojiHistory = JSON.parse(localStorage.getItem('emojiHistory')) || [];
-    // Tạo đối tượng emoji mới
+    // Tạo đối tượng emoji mới (bao gồm cả name nếu có)
     const emoji = { value: emojiValue, url: emojiImageUrl };
+    if (emojiName) {
+        emoji.name = emojiName;
+    }
     // Kiểm tra xem emoji đã tồn tại trong lịch sử hay chưa
     const emojiIndex = emojiHistory.findIndex(item => item.value === emojiValue);
     // Nếu emoji đã có trong lịch sử, xóa nó khỏi mảng
@@ -437,8 +643,8 @@ function saveEmojiToHistory(emojiValue, emojiImageUrl) {
     }
     // Thêm emoji mới vào đầu mảng
     emojiHistory.unshift(emoji);
-    // Nếu số lượng emoji trong lịch sử vượt quá 10, xóa emoji cũ nhất
-    if (emojiHistory.length > 10) {
+    // Giới hạn tối đa 30 emoji gần đây
+    if (emojiHistory.length > 30) {
         emojiHistory.pop();
     }
     // Lưu lại lịch sử emoji vào localStorage

@@ -141,6 +141,27 @@
       background: var(--border-color);
       color: white;
     }
+
+    .creator-credit {
+      font-size: 11px;
+      color: #6e7681;
+      text-align: center;
+      padding: 8px 0;
+      background: linear-gradient(180deg, transparent, rgba(13, 17, 23, 0.8));
+      border-top: 1px solid var(--border-color);
+    }
+
+    .creator-credit a {
+      color: #58a6ff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .creator-credit a:hover {
+      color: #79c0ff;
+      text-decoration: underline;
+    }
+
     @keyframes pulse {
       0% { color: #82bcff }
       50% { color: #0077ff }
@@ -167,6 +188,9 @@
     <button title="Source"><i class="fa-solid fa-code"></i></button>
     <button title="Facebook"><i class="fa-brands fa-facebook"></i></button>
     <button title="Update" id="update-button"><i class="fas fa-arrow-alt-circle-down"></i></button>
+  </div>
+  <div class="creator-credit">
+    Made with ❤️ by Nguyễn Trọng Đức • <a href="https://buymeacoffee.com/duckcitvn" title="Buy me a coffe" target="_blank">Support this project</a>
   </div>
 </body>
 <script src="popup.js"></script>

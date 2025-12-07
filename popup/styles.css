@@ -45,6 +45,31 @@
     transition: all 0.15s ease-in-out;
     animation: fadein 0.2s;
     backdrop-filter: blur(15px);
+    position: relative;
+}
+
+/* Update badge on react button */
+.update-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 10px;
+    height: 10px;
+    background: #f85149;
+    border-radius: 50%;
+    border: 2px solid #111;
+    animation: badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(248, 81, 73, 0.7);
+    }
+    50% { 
+        transform: scale(1.1);
+        box-shadow: 0 0 0 4px rgba(248, 81, 73, 0);
+    }
 }
 
 @keyframes fadein {
@@ -87,36 +112,36 @@
 
 .menu-container {
     position: absolute;
-    padding: 0 5px 5px 5px;
+    padding: 0;
     bottom: 60px;
     display: flex;
     right: 0;
     flex-flow: column nowrap;
-    align-items: center;
-    background-color: rgba(24, 24, 24, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    align-items: stretch;
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
     transition: all 0.2s ease-in-out, visibility 0.2s ease;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
+    width: 340px;
+    height: 320px;
 }
 
 
 .emoji-group {
-    right: 0;
-    width: 250px;
-    height: 200px;
-    padding: 0 15px 15px 15px;
     list-style: none;
     margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    overflow-y: scroll;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 8px 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2px;
+    overflow-y: auto;
+    flex: 1;
+    align-content: start;
+    min-height: 190px;
 }
 
 .info-emoji {
@@ -164,24 +189,30 @@
 }
 
 .emoji {
-    height: 50px;
-    width: 50px;
+    aspect-ratio: 1;
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
-    font-size: 30px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.emoji:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.15);
 }
 
 .emoji-image {
-    position: absolute;
-    vertical-align: middle;
-    object-fit: cover;
-    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    transition: opacity 0.3s ease-in-out;
     cursor: pointer;
+    pointer-events: none;
+    transform: translateY(0.5px);
 }
 .emoji-appear {
     animation: emojiFadeIn 0.3s ease-out forwards;
@@ -197,14 +228,8 @@
         transform: scale(1);
     }
 }
-.emoji-image {
-    transform: translateY(1px);
-    width: 34.8px;
-    height: 34.8px;
-    opacity: 1;
-}
 .emoji:hover {
-    background-color: rgba(165, 165, 165, 0.5);
+    background-color: rgba(165, 165, 165, 0.35);
 }
 
 a {
@@ -311,4 +336,144 @@ a:hover {
 [tooltip].show-tooltip:after {
     opacity: 1;
     transition: opacity 0.2s ease;
+}
+
+/* Facebook-style emoji menu */
+.emoji-search {
+    display: block;
+    width: calc(100% - 24px);
+    padding: 5px 12px 9px 38px;
+    margin: 10px 12px 8px 12px;
+    background: rgba(40, 40, 40, 0.9);
+    border: none;
+    border-radius: 20px;
+    color: #e4e6eb;
+    font-size: 14px;
+    outline: none;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.emoji-search:focus {
+    background: rgba(70, 70, 70, 0.95);
+}
+
+.emoji-search::placeholder {
+    color: #b0b3b8;
+}
+
+.emoji-search-icon {
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 1px;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+    z-index: 10;
+    color: #b0b3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emoji-category-header {
+    grid-column: 1 / -1;
+    padding: 10px 4px 4px 4px;
+    font-size: 12px;
+    color: #b0b3b8;
+    font-weight: 600;
+    background: transparent;
+}
+
+.emoji-category-header:first-child {
+    padding-top: 4px;
+}
+
+/* Empty recent state */
+.empty-recent {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    text-align: center;
+    color: #666;
+}
+
+.empty-recent svg {
+    margin-bottom: 8px;
+    opacity: 0.6;
+}
+
+.empty-recent p {
+    margin: 0;
+    font-size: 13px;
+    color: #999;
+    font-weight: 500;
+}
+
+.empty-recent span {
+    margin-top: 4px;
+    font-size: 11px;
+    color: #666;
+}
+
+.emoji-category-tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background: rgba(40, 40, 40, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.emoji-category-tab {
+    background: none;
+    border: none;
+    color: #8a8d91;
+    cursor: pointer;
+    padding: 8px 10px;
+    transition: color 0.2s ease, background 0.2s ease;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 35px;
+    position: relative;
+}
+
+.emoji-category-tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 28px;
+    height: 3px;
+    background: #2d88ff;
+    border-radius: 2px 2px 0 0;
+    transition: transform 0.2s ease;
+}
+
+.emoji-category-tab svg {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+}
+
+.emoji-category-tab:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.emoji-category-tab.active {
+    color: #2d88ff;
+}
+
+.emoji-category-tab.active::after {
+    transform: translateX(-50%) scaleX(1);
 }

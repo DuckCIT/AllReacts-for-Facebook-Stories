@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "AllReacts for Facebook Stories",
   "description": "Enhance your Facebook Stories experience with a variety of emoji reactions and hide your 'seen' status!",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.facebook.com/*"
+        "*://*.facebook.com/*"
       ],
       "css": [
         "popup/styles.css"
@@ -28,13 +28,13 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "data/emoji.json",
+        "data/emojis.json",
         "data/facebook.json",
         "scripts/story.js",
         "scripts/unseen.js"
       ],
       "matches": [
-        "https://www.facebook.com/*"
+        "*://*.facebook.com/*"
       ]
     }
   ],
@@ -45,7 +45,7 @@
     "notifications"
   ],
   "host_permissions": [
-    "https://www.facebook.com/*"
+    "*://*.facebook.com/*"
   ],
   "action": {
     "default_popup": "popup/popup.html"

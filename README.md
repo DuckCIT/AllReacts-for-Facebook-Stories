@@ -8,15 +8,26 @@
 </p>
 
 <h2 align="center">AllReacts for Facebook Stories</h2>
+<p align="center"><strong>v2.0.0</strong> - A revolutionary update with categories, search, and 1800+ emojis!</p>
 <br/>
 <p align="center">AllReacts is an <strong>open-source</strong> MIT-licensed <strong>browser extension</strong> that lets you react to Facebook Stories with any emoji, going beyond the default reactions. It also allows you to view Stories without marking them as "seen," offering more flexibility and privacy.</p>
 <br/>
+
+## 🎉 What's New in v2.0.0
+- **🗂️ Emoji Categories**: 9 organized categories for easy browsing
+- **🔍 Smart Search**: Find emojis by name with optimized performance
+- **⏱️ Recent Emojis**: Quick access to your 30 most used emojis
+- **🌍 Global Support**: Works on all Facebook domains worldwide
+- **🔔 Update Notifications**: Badge indicator when new version is available
 
 ## Latest Updates
 For the latest features and improvements, check out the [CHANGELOG](CHANGELOG.md).
 
 ## Features
 - **React with Any Emoji**: Break free from Facebook's default reactions and use any emoji to express yourself on Stories.
+- **1800+ Emojis**: Massive emoji library organized in 9 categories.
+- **Smart Search**: Quickly find the perfect emoji by typing its name.
+- **Recent Emojis**: Your frequently used emojis are always at hand.
 - **Unseen Stories**: View Stories discreetly without notifying the poster.
 - **User-Friendly Interface**: Enjoy a simple, intuitive design for seamless interaction.
 
@@ -50,7 +61,7 @@ For the latest features and improvements, check out the [CHANGELOG](CHANGELOG.md
 © 2024 by Nguyen Trong Duc (DuckCIT). All rights reserved. Feel free to build upon this project, but please credit the original author.
 
 ## Contact
-Questions or feedback? Reach out via the <a href="https://duckcit.me" target="_blank">Contact Page</a> or leave a comment on [GitHub](https://github.com/DuckCIT/AllReacts-for-Facebook-Stories).
+Questions or feedback? Reach out via the <a href="https://duckcit.netlify.app" target="_blank">Contact Page</a> or leave a comment on [GitHub](https://github.com/DuckCIT/AllReacts-for-Facebook-Stories).
 
 ## License
 This project is licensed under the MIT License. See the  file for details.

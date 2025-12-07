@@ -1,5 +1,42 @@
 # Changelog
 
+## v2.0.0 🎉 Major Release
+### ✨ New Features
+- **Emoji Categories**: Organized emojis into 9 categories (Recent, Smileys & People, Animals & Nature, Food & Drink, Activity, Travel & Places, Objects, Symbols, Flags)
+- **Category Tabs**: Quick navigation with icon tabs at the bottom of the emoji picker
+- **Search Functionality**: Search emojis by name with debounce optimization (300ms delay)
+- **Recent Emojis**: Automatically saves up to 30 recently used emojis
+- **Empty State UI**: Beautiful placeholder when no recent emojis exist
+- **Update Badge**: Red notification badge on the react button when updates are available
+
+### 🚀 Performance Improvements
+- **Debounced Search**: Prevents lag while typing in search box
+- **Limited Search Results**: Shows max 100 results to avoid performance issues
+- **Lazy Loading**: Images load only when visible in viewport
+
+### 🌍 Internationalization
+- All UI text converted to English for global users
+- Support for all Facebook domains (`*://*.facebook.com/*`)
+
+### 🎨 UI/UX Improvements
+- Smooth animations for category tab switching
+- Fixed menu height (320px) during search
+- Search icon in search bar
+- Creator credit in popup footer
+- Improved update notification system in popup
+
+### 📦 Data Structure
+- New JSON format with categories and emoji names
+- Expanded emoji library (~1800+ emojis)
+- Added `name` field for better search accuracy
+
+### 🔧 Bug Fixes
+- Fixed search icon not visible
+- Fixed menu height changing during search
+- Improved Recent emoji ordering (most recent first)
+
+---
+
 ## v1.0.9
 - Applied Facebook's native class styles to emoji list items for consistent UI.
 - Added support for loading `emoji.json` and `facebook.json` from GitHub with local file fallback for easier updates.
