@@ -8,10 +8,15 @@
 </p>
 
 <h2 align="center">AllReacts for Facebook Stories</h2>
-<p align="center"><strong>v2.0.0</strong> - A revolutionary update with categories, search, and 1800+ emojis!</p>
+<p align="center"><strong>v2.0.1</strong> - Compatibility update for Facebook's latest GraphQL changes</p>
 <br/>
 <p align="center">AllReacts is an <strong>open-source</strong> MIT-licensed <strong>browser extension</strong> that lets you react to Facebook Stories with any emoji, going beyond the default reactions. It also allows you to view Stories without marking them as "seen," offering more flexibility and privacy.</p>
 <br/>
+
+## ✅ What's New in v2.0.1
+- **Fixed Facebook GraphQL update**: Updated story reaction request to match Facebook's latest GraphQL parameters and headers.
+- **No more instant 429 rate-limit**: Adds missing request headers/tokens used by Facebook (e.g. `x-fb-lsd`, `x-asbd-id`) to improve reliability.
+- **Smoother reactions**: Reduced the minimum interval between reactions for faster multi-react.
 
 ## 🎉 What's New in v2.0.0
 - **🗂️ Emoji Categories**: 9 organized categories for easy browsing

@@ -751,6 +751,59 @@ function getFbdtsg() {
     return resp ? resp[1] : '';
 }
 
+function getLsd() {
+    const html = document.documentElement.innerHTML;
+    let match = /name=\"lsd\" value=\"([^\"]+)\"/m.exec(html);
+    if (match) return match[1];
+    match = /\["LSD",\[],\{"token":"(.+?)"\}\]/m.exec(html);
+    return match ? match[1] : '';
+}
+
+function getXFbLsd() {
+    const html = document.documentElement.innerHTML;
+    let match = /"token"\s*:\s*"([A-Za-z0-9\-_]+)"\s*,\s*"name"\s*:\s*"x-fb-lsd"/m.exec(html);
+    if (match) return match[1];
+    match = /\["X_FB_LSD",\[],\{"token":"(.+?)"\}\]/m.exec(html);
+    return match ? match[1] : '';
+}
+
+function getAsbdId() {
+    const html = document.documentElement.innerHTML;
+    const match = /"ASBD_ID"\s*:\s*"?(\d+)"?/m.exec(html);
+    return match ? match[1] : '';
+}
+
+function getJazoest(fb_dtsg) {
+    if (!fb_dtsg) return '';
+    let sum = 0;
+    for (let i = 0; i < fb_dtsg.length; i++) sum += fb_dtsg.charCodeAt(i);
+    return '2' + sum;
+}
+
+function getSpinR() {
+    const html = document.documentElement.innerHTML;
+    let match = /"__spin_r":(\d+)/m.exec(html);
+    if (match) return match[1];
+    match = /__spin_r\s*\n\s*(\d+)/m.exec(html);
+    return match ? match[1] : '';
+}
+
+function getSpinB() {
+    const html = document.documentElement.innerHTML;
+    let match = /"__spin_b":"([^"]+)"/m.exec(html);
+    if (match) return match[1];
+    match = /__spin_b\s*\n\s*([A-Za-z0-9_\-]+)/m.exec(html);
+    return match ? match[1] : '';
+}
+
+function getSpinT() {
+    const html = document.documentElement.innerHTML;
+    let match = /"__spin_t":(\d+)/m.exec(html);
+    if (match) return match[1];
+    match = /__spin_t\s*\n\s*(\d+)/m.exec(html);
+    return match ? match[1] : '';
+}
+
 /**
  * Lấy ID người dùng từ cookie
  * @returns {string} - ID người dùng nếu tìm thấy, ngược lại là chuỗi rỗng
@@ -760,6 +813,8 @@ function getUserId() {
     const resp = regex.exec(document.cookie);
     return resp ? resp[1] : '';
 }
+
+let lastReactStoryAt = 0;
 
 /**
  * Gửi phản hồi (reaction) lên story
@@ -771,10 +826,24 @@ function getUserId() {
  */
 function reactStory(user_id, fb_dtsg, story_id, message) {
     return new Promise(async (resolve, reject) => {
+        const now = Date.now();
+        if (now - lastReactStoryAt < 250) {
+            reject(new Error('RATE_LIMITED_CLIENT'));
+            return;
+        }
+        lastReactStoryAt = now;
         const loadingToast = showToast('Sending request...', 'loading');
+        const lsd = getLsd();
+        const x_fb_lsd = getXFbLsd();
+        const asbd_id = getAsbdId();
+        const jazoest = getJazoest(fb_dtsg);
+        const spin_r = getSpinR();
+        const spin_b = getSpinB();
+        const spin_t = getSpinT();
         // Dữ liệu gửi đi cho mutation GraphQL
         const variables = {
             input: {
+                attribution_id_v2: `StoriesCometSuspenseRoot.react,comet.stories.viewer,via_extension,${Date.now()},,,,,`,
                 lightweight_reaction_actions: {
                     offsets: [0],  // Đặt offset cho phản ứng
                     reaction: message,  // Loại phản ứng (emoji)
@@ -783,29 +852,49 @@ function reactStory(user_id, fb_dtsg, story_id, message) {
                 story_id: story_id,  // ID story
                 story_reply_type: 'LIGHT_WEIGHT',
                 actor_id: user_id,  // ID người dùng
-                client_mutation_id: 7,
+                client_mutation_id: String(Math.floor(Math.random() * 1000000)),
             },
         };
+        console.log(user_id, fb_dtsg)
         // Tạo body cho request
         const body = new URLSearchParams();
         body.append('av', user_id);  // ID người dùng
+        body.append('__aaid', 0);
         body.append('__user', user_id);  // User ID cho xác thực
         body.append('__a', 1);  // Thông số yêu cầu
+        body.append('__req', '10');
+        body.append('__comet_req', '15');
         body.append('fb_dtsg', fb_dtsg);  // Mã fb_dtsg
+        if (jazoest) body.append('jazoest', jazoest);
+        if (lsd) body.append('lsd', lsd);
+        if (spin_r) body.append('__spin_r', spin_r);
+        if (spin_b) body.append('__spin_b', spin_b);
+        if (spin_t) body.append('__spin_t', spin_t);
         body.append('fb_api_caller_class', 'RelayModern');
         body.append('fb_api_req_friendly_name', 'useStoriesSendReplyMutation');
         body.append('variables', JSON.stringify(variables));  // Dữ liệu gửi đi
         body.append('server_timestamps', true);
-        body.append('doc_id', '3769885849805751');
+        body.append('doc_id', '9697491553691692');
+
         try {
             // Gửi yêu cầu POST tới Facebook API
             const response = await fetch('https://www.facebook.com/api/graphql/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
+                    'Accept': '*/*',
+                    ...(asbd_id ? { 'x-asbd-id': asbd_id } : {}),
+                    ...(x_fb_lsd ? { 'x-fb-lsd': x_fb_lsd } : {}),
+                    'x-fb-friendly-name': 'useStoriesSendReplyMutation',
                 },
+                credentials: 'include',
                 body,
             });
+
+            if (response.status === 429) {
+                updateToast(loadingToast.dataset.loadingId, 'Facebook is rate limiting (429). Wait 1-2 minutes then try again.', 'error');
+                return reject({ status: 429 });
+            }
             const res = await response.json();
             // Nếu có lỗi, reject Promise
             if (res.errors) {

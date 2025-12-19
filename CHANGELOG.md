@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.1
+- Fixed Facebook Stories reaction after Facebook updated GraphQL.
+- Updated request parameters and required headers/tokens for `useStoriesSendReplyMutation`.
+- Improved reliability (prevents immediate 429 rate-limit when reacting via extension).
+- Faster multi-react by reducing the minimum interval between reactions.
+
 ## v2.0.0 🎉 Major Release
 ### ✨ New Features
 - **Emoji Categories**: Organized emojis into 9 categories (Recent, Smileys & People, Animals & Nature, Food & Drink, Activity, Travel & Places, Objects, Symbols, Flags)
